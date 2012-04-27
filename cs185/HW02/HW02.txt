@@ -1,0 +1,20 @@
+@author Jake Petroules
+@course CS-185-01
+@filename HW02.txt
+
+The program prints a message to tell the user what it does.
+
+It then creates an array containing 5 account objects.
+
+It deposits $2300 into Jake Petroules' account and prints the balance.
+It deposits $5200 into Mike Hanrahan's account and prints the balance.
+It withdraws $2300 with a fee of $1.50 from Jake Petroules' account and prints the balance.
+
+It then deposits $25.85 into Ted Murphy's account.
+
+It then deposits $500 into Jane Smith's account and prints the balance.
+It then withdraws $430.75 with a fee of $1.50 from Jane Smith's account and prints the balance.
+
+It then prints a summary of all five accounts.
+
+The program then calculates interest for all 5 accounts and prints another summary of all five accounts. 

@@ -1,0 +1,305 @@
+Person::getId() method
+START
+	return id
+END
+
+Person::getBirthDate() method
+START
+	return birthDate
+END
+
+Person::setBirthDate() method
+START
+	birthDate := <value>
+END
+
+Person::getFirstName() method
+START
+	return firstName
+END
+
+Person::setFirstName() method
+START
+	firstName := <value>
+END
+
+Person::getGender() method
+START
+	return gender
+END
+
+Person::setGender() method
+START
+	gender := <value>
+END
+
+Person::getLastName() method
+START
+	return lastName
+END
+
+Person::setLastName() method
+START
+	lastName := <value>
+END
+
+Person::getTelephoneNumber() method
+START
+	return telephoneNumber
+END
+
+Person::setTelephoneNumber() method
+START
+	telephoneNumber := <value>
+END
+
+---
+
+Student::getMajor() method
+START
+	return major
+END
+
+Student::setMajor() method
+START
+	major := <value>
+END
+
+---
+
+Alumni::getEmployer() method
+START
+	return employer
+END
+
+Alumni::setEmployer() method
+START
+	employer := <value>
+END
+
+Alumni::getJobTitle() method
+START
+	return jobTitle
+END
+
+Alumni::setJobTitle() method
+START
+	jobTitle := <value>
+END
+
+---
+
+Employee::getAreaOfSpecialization() method
+START
+	return areaOfSpecialization
+END
+
+Employee::setAreaOfSpecialization() method
+START
+	areaOfSpecialization := <value>
+END
+
+Employee::getDepartment() method
+START
+	return department
+END
+
+Employee::setDepartment() method
+START
+	department := <value>
+END
+
+Employee::getEmployer() method
+START
+	return employer
+END
+
+Employee::setEmployer() method
+START
+	employer := <value>
+END
+
+Employee::getJobTitle() method
+START
+	return jobTitle
+END
+
+Employee::setJobTitle() method
+START
+	jobTitle := <value>
+END
+
+---
+
+BinarySearchTree::add(T value) method
+START
+	if value is null
+		return
+
+    if root is null
+        root := new Node(value)
+    else
+        root := insert(root, value)
+END
+
+BinarySearchTree::clear() method
+START
+	root := null
+END
+
+BinarySearchTree::get(T value) method
+START
+	if root is null
+        return null
+
+    Node<T> node := root
+    int compareResult
+    while (compareResult := node.value.compareTo(value)) != 0
+        if compareResult > 0
+            if node.left is not null
+                node := node.left
+            else
+                return null
+        else
+            if node.right is not null
+                node := node.right
+            else
+                return null
+
+    return node.value
+END
+
+BinarySearchTree::inorder() method
+START
+	ArrayList<T> list := new ArrayList<T>()
+    if root is not null
+        root.inorder(list)
+
+    return list
+END
+
+BinarySearchTree::insert(Node<T> node, T value) method
+START
+	Node<T> result := new Node<T>(node)
+    int compare := result.value.compareTo(value)
+
+    if compare > 0
+        if result.left is not null
+            result.left := insert(result.left, value)
+        else
+            result.left := new Node<T>(value)
+    else if compare < 0
+        if result.right is not null
+            result.right := insert(result.right, value)
+        else
+            result.right := new Node<T>(value)
+
+    return result
+END
+
+BinarySearchTree::isEmpty() method
+START
+	return size() == 0
+END
+
+BinarySearchTree::postorder() method
+START
+	ArrayList<T> list := new ArrayList<T>()
+    if root is not null
+        root.postorder(list)
+
+    return list
+END
+
+BinarySearchTree::preorder() method
+START
+	ArrayList<T> list := new ArrayList<T>()
+    if root is not null
+        root.preorder(list)
+
+    return list
+END
+
+BinarySearchTree::remove() method
+START
+	if root is null
+        return
+
+    if root.value.compareTo(value) is 0
+        Node auxRoot := new Node()
+        auxRoot.left := root
+        root.remove(value, auxRoot);
+        root := auxRoot.left;
+    else
+        root.remove(value, null)
+END
+
+BinarySearchTree::size() method
+START
+	return inorder().size()
+END
+
+Node::inorder(ArrayList<T> list) method
+START
+	if left is not null
+        left.inorder(list)
+
+    list.add(value)
+
+    if right is not null
+        right.inorder(list)
+END
+
+Node::minValue() method
+START
+	if left is null
+        return value
+    else
+        return left.minValue()
+END
+
+Node::postorder(ArrayList<T> list) method
+START
+	if left is not null
+        left.inorder(list)
+
+    if right is not null
+        right.inorder(list)
+
+	list.add(value)
+END
+
+Node::preorder(ArrayList<T> list) method
+START
+	list.add(value)
+
+	if left is not null
+        left.inorder(list)
+
+    if right is not null
+        right.inorder(list)
+END
+
+Node::remove(T value, Node<T> parent) method
+START
+	if value.compareTo(this.value) < 0
+        if left is not null
+            return left.remove(value, this)
+        else
+            return false
+    else if value.compareTo(this.value) > 0
+        if right is not null
+            return right.remove(value, this)
+        else
+            return false
+    else
+        if left is not null AND right is not null
+            value := right.minValue()
+            right.remove(value, this)
+        else if (parent.left is this)
+            parent.left := (left is not null) ? left : right;
+        else if (parent.right is this)
+            parent.right := (left is not null) ? left : right;
+
+        return true
+END

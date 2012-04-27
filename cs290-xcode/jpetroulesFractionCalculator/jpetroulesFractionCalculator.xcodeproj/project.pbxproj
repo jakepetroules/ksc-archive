@@ -1,0 +1,242 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F7B966B144F308700E37D4C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F7B966A144F308700E37D4C /* Foundation.framework */; };
+		0F7B966E144F308700E37D4C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B966D144F308700E37D4C /* main.m */; };
+		0F7B9672144F308700E37D4C /* jpetroulesFractionCalculator.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 0F7B9671144F308700E37D4C /* jpetroulesFractionCalculator.1 */; };
+		0F7B967A144F30B400E37D4C /* Fraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F7B9679144F30B400E37D4C /* Fraction.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0F7B9664144F308700E37D4C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				0F7B9672144F308700E37D4C /* jpetroulesFractionCalculator.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0F7B9666144F308700E37D4C /* jpetroulesFractionCalculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jpetroulesFractionCalculator; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F7B966A144F308700E37D4C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0F7B966D144F308700E37D4C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0F7B9670144F308700E37D4C /* jpetroulesFractionCalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jpetroulesFractionCalculator-Prefix.pch"; sourceTree = "<group>"; };
+		0F7B9671144F308700E37D4C /* jpetroulesFractionCalculator.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jpetroulesFractionCalculator.1; sourceTree = "<group>"; };
+		0F7B9678144F30B400E37D4C /* Fraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fraction.h; sourceTree = "<group>"; };
+		0F7B9679144F30B400E37D4C /* Fraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fraction.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0F7B9663144F308700E37D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F7B966B144F308700E37D4C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F7B965B144F308700E37D4C = {
+			isa = PBXGroup;
+			children = (
+				0F7B966C144F308700E37D4C /* jpetroulesFractionCalculator */,
+				0F7B9669144F308700E37D4C /* Frameworks */,
+				0F7B9667144F308700E37D4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0F7B9667144F308700E37D4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0F7B9666144F308700E37D4C /* jpetroulesFractionCalculator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0F7B9669144F308700E37D4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F7B966A144F308700E37D4C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F7B966C144F308700E37D4C /* jpetroulesFractionCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				0F7B9678144F30B400E37D4C /* Fraction.h */,
+				0F7B9679144F30B400E37D4C /* Fraction.m */,
+				0F7B966D144F308700E37D4C /* main.m */,
+				0F7B9671144F308700E37D4C /* jpetroulesFractionCalculator.1 */,
+				0F7B966F144F308700E37D4C /* Supporting Files */,
+			);
+			path = jpetroulesFractionCalculator;
+			sourceTree = "<group>";
+		};
+		0F7B966F144F308700E37D4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0F7B9670144F308700E37D4C /* jpetroulesFractionCalculator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F7B9665144F308700E37D4C /* jpetroulesFractionCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0F7B9675144F308700E37D4C /* Build configuration list for PBXNativeTarget "jpetroulesFractionCalculator" */;
+			buildPhases = (
+				0F7B9662144F308700E37D4C /* Sources */,
+				0F7B9663144F308700E37D4C /* Frameworks */,
+				0F7B9664144F308700E37D4C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jpetroulesFractionCalculator;
+			productName = jpetroulesFractionCalculator;
+			productReference = 0F7B9666144F308700E37D4C /* jpetroulesFractionCalculator */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0F7B965D144F308700E37D4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Keene State College";
+			};
+			buildConfigurationList = 0F7B9660144F308700E37D4C /* Build configuration list for PBXProject "jpetroulesFractionCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0F7B965B144F308700E37D4C;
+			productRefGroup = 0F7B9667144F308700E37D4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0F7B9665144F308700E37D4C /* jpetroulesFractionCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F7B9662144F308700E37D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F7B966E144F308700E37D4C /* main.m in Sources */,
+				0F7B967A144F30B400E37D4C /* Fraction.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0F7B9673144F308700E37D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0F7B9674144F308700E37D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0F7B9676144F308700E37D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jpetroulesFractionCalculator/jpetroulesFractionCalculator-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0F7B9677144F308700E37D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jpetroulesFractionCalculator/jpetroulesFractionCalculator-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0F7B9660144F308700E37D4C /* Build configuration list for PBXProject "jpetroulesFractionCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F7B9673144F308700E37D4C /* Debug */,
+				0F7B9674144F308700E37D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0F7B9675144F308700E37D4C /* Build configuration list for PBXNativeTarget "jpetroulesFractionCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F7B9676144F308700E37D4C /* Debug */,
+				0F7B9677144F308700E37D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0F7B965D144F308700E37D4C /* Project object */;
+}

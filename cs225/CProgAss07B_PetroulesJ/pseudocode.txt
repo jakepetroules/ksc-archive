@@ -1,0 +1,100 @@
+The program presents a menu to the user:
+(1) Add salesman
+(2) Add sales log
+(3) Find salesman
+(4) Find sales log
+(5) Find salesman profile
+(6) Analyze total sales
+(0) Exit
+
+If the user enters 1:
+    Prompt the user to input data for employee:
+        ID
+        Name
+        Address
+        Phone #
+        Email
+    Add to list
+Else if the user enters 2:
+    Prompt the user to input data for sales period:
+        ID
+        Sales period
+        Volvo
+        Honda
+        Toyota
+        Chrysler
+    Add to list
+Else if the user enters 3:
+    Prompt for salesman ID
+    Loop through salesmen
+        If current ID = prompted ID
+            Print info
+        End If
+    End loop
+
+    If no salesman was found
+        Print no salesman found
+    End if
+Else if the user enters 4:
+    Prompt for salesman ID
+    Loop through sales logs
+        If current ID = prompted ID
+            Print info
+        End If
+    End loop
+
+    If no sales log was found
+        Print no sales log found
+    End if
+Else if the user enters 5:
+    Prompt for salesman ID
+    Loop through salesmen
+        If current ID = prompted ID
+            Print info
+        End If
+    End loop
+
+    Loop through sales logs
+        If current ID = prompted ID
+            Print info
+        End If
+    End loop
+
+    If no salesman was found
+        Print no salesman found
+    End if
+
+    If no sales log was found
+        Print no sales log found
+    End if
+Else if the user enters 6:
+    Loop through sales logs
+        Add to sales log sum
+    End loop
+
+    Print sales log sum
+
+    Loop through sales logs
+        Add to total sales
+    End loop
+
+    Print total sales
+
+    Print average sales (total sales / number of manufacturers)
+
+    Loop through sales logs
+        Set lowest sale if current < saved
+    End loop
+
+    Print lowest sales
+
+    Loop through sales logs
+        Set highest sale if current > saved
+    End loop
+
+    Print highest sales
+Else if user enters 0:
+    Exit
+End if
+
+Go back to prompt

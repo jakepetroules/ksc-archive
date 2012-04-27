@@ -1,0 +1,20 @@
+@author Jake Petroules
+@course CS-185-01
+@filename HW08.txt
+
+The program prints a message explaining what it does.
+
+It then creates an IntegerPairCollection, which is derived from my previously
+created generic collection class, demonstrating the principle of software reuse.
+It reads the input values from the file values.inp and stores them in the collection.
+
+The program then creates an instance of my previously created GridFormatter class,
+used for neatly formatted output, again demonstrating the principle of software reuse.
+
+The program loops through each pair of integers previously read from the values.inp file,
+and calculates their products, quotients and division remainders. It catches any ArithmeticExceptions
+that occur during the calculations of the quotients and division remainders, and displays
+an error message instead of the integer result, for each operation that fails.
+
+The program then uses the capabilities of the GridFormatter to write the contents of the calculation
+table to a file, values.out, along with an information message explaining the contents of the file.

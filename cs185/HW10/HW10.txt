@@ -1,0 +1,5 @@
+The program prompts the user for their age and the number of years forward (positive number) or backward (negative number) in time they want to travel.
+
+The program then goes through time, asking the user the color and condition of their house at each step.
+
+When the user enters a number that will result in their age being outside the range 0 to 100, exclusive, the program prints (in reverse order) the user's age and house details at each step.

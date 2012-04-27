@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="StudentSelecter.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="DefaultFtpUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp://petroules.com/cs185-01</Value>
+    </Setting>
+    <Setting Name="DefaultFtpUserName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cs.keene.edu</Value>
+    </Setting>
+    <Setting Name="DefaultFtpPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/cs185-01</Value>
+    </Setting>
+    <Setting Name="DefaultFtpHost" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ftp.petroules.com</Value>
+    </Setting>
+    <Setting Name="DefaultFtpPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">presley1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

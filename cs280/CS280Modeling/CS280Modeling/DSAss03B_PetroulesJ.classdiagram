@@ -1,0 +1,419 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="acbbad53-f680-4f36-8637-7b8fa8966da5" name="DSAss03B_PetroulesJ" linkedPackageId="40d8838c-4698-48c4-bf55-2b64418d4122" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="60942298-c37d-43a1-a6a5-ad2ee75c80d8">
+      <profileInstance Id="9bf7ede4-f8e9-46ce-8193-e0d255020bc5" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="21165814-62ef-4321-bf7b-0409e399a7e3">
+      <profileInstance Id="967db12a-1013-4970-99fc-9056ef463019" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="7b55e50c-d27c-4464-98b7-30dcfbfaef62" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d38cc846-32ee-4469-87e6-397682dfee99" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="8c6d4681-9f33-464e-ae29-22237efc18f0" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="712f297c-fccf-4cd3-834c-4e5b4b2fb92a" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="999ee6e7-e5f8-4167-beca-7545c5f21cf5" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3940f204-b1cc-4959-bd18-73e53ba7e50f" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="97f59752-3a97-4931-a37b-5ed2c0152de2" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="1ff75a44-cad4-4398-9179-6a641dab4ad7" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="67ad8de5-a5f8-4156-91c2-713a3061b640" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2a264fdf-4f5f-4092-9630-4e4812cb56c5" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5f0a6050-ffad-4d32-be38-7d848f0b3dd7" name="Country" isAbstract="false" isLeaf="false" cachedFullName="CS280Modeling::Country">
+        <elementDefinition Id="c8426dbc-aa4d-4fe1-a66f-b8a682f955ec" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b1ed8246-8eba-4cd8-8211-4564ce2081d2" name="Collection&lt;Country&gt;" isAbstract="false" isLeaf="false" cachedFullName="Collection&lt;Country&gt;">
+        <elementDefinition Id="0ec23f59-8e61-4ca2-b8fe-b108f5b7a66b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="68c4b980-5e9f-4130-bd05-7bee19e2ce47" name="CountryCollection" isAbstract="false" isLeaf="false" cachedFullName="CS280Modeling::CountryCollection">
+        <elementDefinition Id="942c45bf-c658-4b48-b8c0-9661f0241b6f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ee7c4357-2403-405c-9739-2798d2a91852" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9fc7779d-823c-4681-ad13-7fa44e58e4da" name="Country" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="686fc616-099b-4c33-8cbf-19f31e62922f" />
+        <ownedAttributesInternal>
+          <property Id="4de4755e-fbd4-40dc-9036-2ce299810d98" name="name" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9c194b62-5e46-4a3c-9b00-6deef434e2e1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="7b55e50c-d27c-4464-98b7-30dcfbfaef62" LastKnownName="String" />
+            </type_NamedElement>
+          </property>
+          <property Id="9e02b2e3-2b91-45f5-9d35-0da979dbf85f" name="perCapitaIncome" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b2846593-ba80-4e50-bc69-1d5d66d7788e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d38cc846-32ee-4469-87e6-397682dfee99" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="4ed1ccc6-9d0d-4630-9bc4-7907b34d6ada" name="population" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5d90adb9-96a9-418d-a8cb-3153f61a67d0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="8c6d4681-9f33-464e-ae29-22237efc18f0" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ceaf18ad-7409-4bbb-9583-64b4c6e402c4" name="getPerCapitaIncome" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1203c85d-cc18-4a78-a2bf-2e58e26c7a99" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="bbe315c9-c7d3-4dd8-ad45-c1ef2cba9097" direction="Return" isUnique="false">
+                  <elementDefinition Id="7b67879d-6796-401a-aa5a-a04873c77a80" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="712f297c-fccf-4cd3-834c-4e5b4b2fb92a" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="2256470e-5f34-444b-a56b-b320f14f7827" name="getGrossNationalIncome" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="52cff506-8f0a-40da-bbe3-9909ccda7694" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="be360e99-a955-4711-b039-c7a14651dbb1" direction="Return" isUnique="false">
+                  <elementDefinition Id="89f00aa6-90c6-44ae-82e0-b5718145bae0" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="999ee6e7-e5f8-4167-beca-7545c5f21cf5" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d6b92493-6ce0-4a5b-bece-1a767d02127d" name="getName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="39d47dff-b5b6-4561-8384-e2952bfafd51" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="84861b95-1c33-4a34-8a34-d9ea5e6e38f5" direction="Return" isUnique="false">
+                  <elementDefinition Id="a44ef4ea-1a29-453a-9b3b-ea38b65060c1" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a233f874-6d07-496b-ac47-7edba9ce9a52" name="getPopulation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bb55297e-ff67-4b4a-9162-8a78451050fb" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="76096d0b-8502-4f90-847d-4a8083764ed1" direction="Return" isUnique="false">
+                  <elementDefinition Id="fe79539f-98bd-4e55-8cd5-a74ffce245a4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="3940f204-b1cc-4959-bd18-73e53ba7e50f" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="9530d653-15c9-4cf0-aef7-192d820dcc37" name="setGrossNationalIncome" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="95dc9e24-7bb1-445d-bc30-d44ebd89cc91" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="f2e6f4fc-271f-4162-ac1b-448a0941028b" name="gni" direction="In">
+                  <elementDefinition Id="612a12f0-98ca-4b90-918a-04b29f5e5de5" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="712f297c-fccf-4cd3-834c-4e5b4b2fb92a" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d5af5380-ab1f-4b74-a169-2640e200322b" name="setName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf94e07a-fc36-4594-a743-a087fba53fd9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9ce68f9b-96fa-4bdf-9e41-bd76cdc93302" name="name" direction="In">
+                  <elementDefinition Id="790e5701-3ced-42e0-bb3a-42a5652fcb39" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="97f59752-3a97-4931-a37b-5ed2c0152de2" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="cc640b5a-dea3-4bee-84af-6d94c54e4f74" name="setPopulation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="120f89e0-25a8-4beb-bfa3-e0866410fbb8" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="315ca6a5-19e1-417f-8bc3-8fa4bcf34261" name="population" direction="In">
+                  <elementDefinition Id="f909331b-2dc3-4d3a-94d3-57eb9f3f3d9b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="712f297c-fccf-4cd3-834c-4e5b4b2fb92a" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="bcb49ad5-a60c-4b0c-85c8-76f0a2fd3f81" name="Country" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="239fd4c6-91f8-4007-adcb-9cbf950631a9" />
+          </operation>
+          <operation Id="05351c48-2665-4713-961e-ead1530e37d0" name="Country" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e64f3105-ee56-456b-a0fc-18f5202a96a5" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="2f215078-5cec-43b0-ae6c-632131d4be12" name="name" direction="In">
+                  <elementDefinition Id="2b253dab-73a7-4b14-a927-2b7379863b9b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="97f59752-3a97-4931-a37b-5ed2c0152de2" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="12799bd0-2e20-4bfb-9464-0b060c547b47" name="population" direction="In">
+                  <elementDefinition Id="42a4c4ad-13c9-4ec6-9280-4ccc2df25517" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="1ff75a44-cad4-4398-9179-6a641dab4ad7" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="44e1aef3-0919-4bdf-a728-d58dcbdb2fc7" name="grossNationalIncome" direction="In">
+                  <elementDefinition Id="46401cbd-e72f-4f44-85fb-2af9b83a8126" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="712f297c-fccf-4cd3-834c-4e5b4b2fb92a" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="95815f53-c3fa-497c-ac76-af78169435aa" name="CountryCollection" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b22281cd-43b3-41f5-bac5-91d5e6185b02" />
+        <ownedOperationsInternal>
+          <operation Id="22240a49-7a05-4086-baa7-c814308d840e" name="getAveragePerCapitaIncome" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="500a30dc-ff97-4cf9-866b-531da4faeb24" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8b88a0a6-72e1-46eb-ad90-24ab10ffd9f8" direction="Return" isUnique="false">
+                  <elementDefinition Id="2524de13-aa28-4674-acf7-8c3cc75a0a88" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="67ad8de5-a5f8-4156-91c2-713a3061b640" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="546de6e2-f41d-4588-9463-c458b5bb2085" name="getStandardDeviation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fb8ed59f-dc5e-4f47-97fe-ed1c2887909c" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="8832fd67-16ac-45b0-9288-2c5579ef3c22" direction="Return" isUnique="false">
+                  <elementDefinition Id="95859f32-4942-4066-b10c-9780b9dddf0b" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="2a264fdf-4f5f-4092-9630-4e4812cb56c5" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="07874e06-e7f9-4b5f-be56-c39cb561642e" name="getHighestPCICountry" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="18d2de6a-e7fe-49c6-94eb-cf7041e3d342" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="36dbdb33-0d53-4967-9785-8db176962e4e" direction="Return" isUnique="false">
+                  <elementDefinition Id="57c6d077-cf51-4136-8116-9d20b70d99ef" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5f0a6050-ffad-4d32-be38-7d848f0b3dd7" LastKnownName="Country" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="d228c013-bd5e-4678-a2b7-2c5099318a97" name="getLowestPCICountry" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8f303d5b-ec9a-4272-98a1-84a19fe0dc80" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="31cdea52-fb25-4e87-85d3-fdcd8bf62628" direction="Return" isUnique="false">
+                  <elementDefinition Id="cdddec0c-3a24-4d69-a921-b82e5c581848" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5f0a6050-ffad-4d32-be38-7d848f0b3dd7" LastKnownName="Country" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="44099d0e-5697-4fe5-83b8-25d56c2aa355" name="sortByPerCapitaIncome" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="255a15e9-e62e-40fb-9148-55d07b885d61" />
+          </operation>
+          <operation Id="c4999edf-1fec-47e5-a302-d9e715514a69" name="indexOf" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7b8b3b37-f425-4b49-b437-ac79fdfc20a3" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="3901ab90-0ba1-4c33-a88b-8c8a07ff0865" name="name" direction="In" isUnique="false">
+                  <elementDefinition Id="62ad8062-7cc5-4368-98f9-65cb92807e9c" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="97f59752-3a97-4931-a37b-5ed2c0152de2" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="ddbd9803-a7b5-4392-95ef-b55836c1c5c2" direction="Return" isUnique="false">
+                  <elementDefinition Id="c0eff6c8-eecd-46f2-a4c7-abaeda6bf28d" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="712f297c-fccf-4cd3-834c-4e5b4b2fb92a" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="34dd21a4-3d2e-40cf-93af-467188a56d63" name="fillWithData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="26168e1a-0c1c-4364-b64f-7d2935c896fb" />
+          </operation>
+          <operation Id="391c6b0f-efde-4f0a-9654-0d63ff4dbb21" name="CountryCollection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a3071ee0-1706-44e2-8ea4-6056db633564" />
+          </operation>
+          <operation Id="2194a5a6-b22b-4790-860b-c2e323488e41" name="CountryCollection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c2b83306-d2e1-41b9-9660-2e805e51bf78" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="db571309-a2e5-4790-be13-6136c2c7ae54" name="initialCapacity" direction="In" isUnique="false">
+                  <elementDefinition Id="87e2a11d-b725-4a9b-9a32-0db4c3a50bb4" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="712f297c-fccf-4cd3-834c-4e5b4b2fb92a" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="440e2e61-8a86-44cd-bb62-8d0dee4aca79" name="CountryCollection" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="12f9d988-f361-4b3f-ab1c-c0efe39dafbf" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e4810ebe-81d7-48d4-9c5f-9bbe0267a9bd" name="c" direction="In">
+                  <elementDefinition Id="3434cb4c-893c-4bbb-b2dc-1a22e55e4c6f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="b1ed8246-8eba-4cd8-8211-4564ce2081d2" LastKnownName="Collection&lt;Country&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="70d80027-6e6f-4662-97b6-af50a265507d" name="&lt;Driver Class&gt;" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4df290d5-a983-4a7d-bb46-693e2046fe00" />
+        <ownedAttributesInternal>
+          <property Id="02ffc7f5-a3ac-4f89-8ec1-8318a0168030" name="countries" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="90e479dc-fff3-4e91-b84c-09e27201f01b" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="68c4b980-5e9f-4130-bd05-7bee19e2ce47" LastKnownName="CountryCollection" />
+            </type_NamedElement>
+          </property>
+          <property Id="e43295a1-a8cc-45a3-8d61-38e1106cfc99" name="currentCollection" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1df10e37-d5b0-42ad-9110-3072261f6b25" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="68c4b980-5e9f-4130-bd05-7bee19e2ce47" LastKnownName="CountryCollection" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="80d3ee52-e563-4316-8ee1-b88eaece0878" name="tableChanged" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9a4ff8e5-a296-41f9-b6bc-d4948d0c80af" />
+          </operation>
+          <operation Id="307391da-1a8f-48c8-85d9-03ae8566e079" name="addRow" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b704ad03-e79c-4d21-bbb3-fbb9b4c89648" />
+          </operation>
+          <operation Id="7fea09cb-61f6-4629-bee2-2c673fe96454" name="removeRows" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d2174a16-cfb7-4a65-b1e5-b3a30cee87a0" />
+          </operation>
+          <operation Id="de62cfa4-bf01-4fbb-94fd-defa67fc08b7" name="launchFindInTable" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ccd3be82-d11a-4392-be81-f17c4eb1ca14" />
+          </operation>
+          <operation Id="f70e2f0e-b365-4db9-a146-df22174aad82" name="showStatistics" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f5fa46e5-4dc2-4a7d-8975-f11c84219e49" />
+          </operation>
+          <operation Id="f00bb380-2e4b-4c12-abd0-743d0c478a0b" name="updateSortOrder" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="764724a9-a288-4383-b3f8-18f907c62058" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="e4cccc16-11b3-43fd-9146-a97a9197e516" name="sort" direction="In" isUnique="false">
+                  <elementDefinition Id="6b161c51-0fb4-44ba-9e5e-380592532f91" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ee7c4357-2403-405c-9739-2798d2a91852" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="763296b9-41ac-4488-a5d7-6cbf26c5f7d8" name="populateTable" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="890ccb20-79ad-4bf8-8476-3d57843eb349" />
+          </operation>
+          <operation Id="21090d18-7197-4c3d-a7ab-fae42e49a441" name="getCountriesSorted" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c313ae06-6399-4885-b2c1-54baeed83120" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="554efcbf-143f-485e-aa34-6953be17b4ce" direction="Return" isUnique="false">
+                  <elementDefinition Id="528d0cc4-5025-426f-bb6e-4d72d199d985" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="68c4b980-5e9f-4130-bd05-7bee19e2ce47" LastKnownName="CountryCollection" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="40d8838c-4698-48c4-bf55-2b64418d4122" name="CS280Modeling">
+    <elementDefinition Id="05efe527-a7c9-4648-b455-37d848ba408c" />
+  </package>
+</logicalClassDesignerModel>

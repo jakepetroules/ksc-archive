@@ -1,0 +1,9 @@
+@author Jake Petroules
+@course CS-185-01
+@filename HW09.txt
+
+The program prints a message explaining what it does.
+
+The program then reads in the maximum number to print, from the user.
+
+The program then prints a message to the user saying the numbers will be displayed, then prints 1, 1 and calls the recursive method which prints the rest of the sequence up to the number the user specified.

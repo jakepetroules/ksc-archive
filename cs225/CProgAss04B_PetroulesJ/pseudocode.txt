@@ -1,0 +1,33 @@
+Show the user a menu:
+
+Choose...
+(1) Add students
+(2) Remove student
+(3) Search for student
+(4) Print students
+(5) Print students (sorted)
+
+If the user chose 1:
+    Ask for number of students to be input N
+    For 1 to N
+        Ask for student ID, name, sex, and major
+        Create new student object with details and add to list
+Else if the user chose 2:
+    Ask for a student ID
+    Loop through the students:
+        If the ID of the current student matches the given ID:
+            Remove student from list
+Else if the user chose 3:
+    Ask for a student ID
+    Loop through the students:
+        If the ID of the current student matches the given ID:
+            Print student details (ID, name, sex, major)
+Else if the user chose 4:
+    Loop through the students:
+        Print the student details (ID, name, sex, major)
+Else if the user chose 5:
+    Copy the student list to a new list
+    Sort it using quicksort
+    Loop through the sorted student list:
+        Print the student details (ID, name, sex, major)
+End If

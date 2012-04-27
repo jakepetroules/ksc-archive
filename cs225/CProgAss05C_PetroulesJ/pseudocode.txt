@@ -1,0 +1,27 @@
+Identification of variables:
+    pair1 : PairOfDice - The first pair of dice
+    roll : int - The value of the roll of pair1
+    die3 : Die - The third die
+    die4 : Die - The fourth die
+    pair2 : PairOfDice - The second pair of dice
+
+The program presents a user with a menu:
+Enter a choice:
+(1) Play dice
+(0) Quit
+
+The program prompts for a number
+
+If the user enters 1:
+    A PairOfDice called pair1 is instantiated
+    The pair is rolled to randomize the values
+    The sum of the values is displayed to the user
+
+    A die, die3, is created with the maximum face value
+    Another die, die4, is created with a random face value (1-6)
+
+    A PairOfDice, pair2, is instantiated
+    The faces of the internal die in pair2 are set to the faces of die3 and die4
+    The pair2 is rolled and the sum of its internal face values are displayed to the user
+Else if the user enters any other number:
+    The program quits

@@ -1,0 +1,267 @@
+/*
+ * SecureUdpServerView.java
+ */
+
+package secureudpserver;
+
+import cryptolibrary.DatabaseCrypto;
+import cryptolibrary.DatabaseCrypto.CryptoStatusWrapper;
+import cryptolibrary.EncryptedData;
+import java.io.IOException;
+import java.net.UnknownHostException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import org.jdesktop.application.Action;
+import org.jdesktop.application.ResourceMap;
+import org.jdesktop.application.SingleFrameApplication;
+import org.jdesktop.application.FrameView;
+import org.jdesktop.application.TaskMonitor;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.InetSocketAddress;
+import java.net.NetworkInterface;
+import java.net.SocketAddress;
+import java.util.ArrayList;
+import java.util.Collections;
+import javax.swing.Timer;
+import javax.swing.Icon;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
+
+/**
+ * The application's main frame.
+ */
+public class SecureUdpServerView extends FrameView {
+    private DatagramSocket socket;
+    
+    class Listen extends Thread
+    {
+        @Override
+        public void run()
+        {
+            while (true) 
+            {
+                try
+                {
+                    byte[] receivedData = new byte[1000];
+                    DatagramPacket receivedPacket = new DatagramPacket(receivedData, receivedData.length); 
+                    SecureUdpServerView.this.socket.receive(receivedPacket);
+
+                    String message = new String(receivedPacket.getData(), 0, receivedPacket.getLength());
+                    
+                    CryptoStatusWrapper error = new CryptoStatusWrapper();
+                    String data = DatabaseCrypto.decrypt(message, String.valueOf(SecureUdpServerView.this.passphrasePasswordField.getPassword()), error);
+                    if (error.cryptoStatus != DatabaseCrypto.CryptoStatus.NoError)
+                    {
+                        SecureUdpServerView.this.logTextArea.append(DatabaseCrypto.statusMessage(error.cryptoStatus));
+                    }
+                    else
+                    {
+                        SecureUdpServerView.this.logTextArea.append("Received packet: \"" + data.toUpperCase() + "\"\n");
+                    }
+                }
+                catch (IOException ex)
+                {
+                    Logger.getLogger(SecureUdpServerView.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+    }
+
+    public SecureUdpServerView(SingleFrameApplication app) {
+        super(app);
+        
+        initComponents();
+        
+        try
+        {
+            this.socket = new DatagramSocket();
+            
+            this.addressComboBox.removeAllItems();
+            this.addressComboBox.addItem("0.0.0.0");
+            
+            NetworkInterface networkInterface = NetworkInterface.getByInetAddress(InetAddress.getLocalHost());
+            ArrayList<InetAddress> addresses = Collections.list(networkInterface.getInetAddresses());
+            for (InetAddress addr : addresses)
+            {
+                String fullAddr = addr.toString();
+                this.addressComboBox.addItem(fullAddr.split("/")[1]);
+            }
+            
+            this.listenerBindingChanged();
+            
+            (new Listen()).start();
+        }
+        catch (Exception ex)
+        {
+            Logger.getLogger(SecureUdpServerView.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+    
+    private void listenerBindingChanged() throws Exception
+    {
+        String address = this.addressComboBox.getSelectedItem().toString();
+        int port = Integer.valueOf(this.portSpinner.getValue().toString());
+        boolean needsRebinding = this.socket.getLocalAddress() != InetAddress.getByName(address) || this.socket.getLocalPort() != port;
+
+        if (needsRebinding)
+        {
+            // If the socket is bound, it needs to be closed before it can be rebound
+            if (this.socket.isBound())
+            {
+                this.socket.close();
+            }
+
+            // Bind to the specified address and port
+            // Print a message indicating whether the socket was successfully bound to the address and port or not
+            this.socket = new DatagramSocket(port, InetAddress.getByName(address));
+            if (this.socket.isBound())
+            {
+                this.logTextArea.append(String.format("Successfully bound to %1$s:%2$d\n", address, port));
+            }
+            else
+            {
+                this.logTextArea.append(String.format("Failed to bind to %1$s:%2$d\n", address, port));
+            }
+        }
+    }
+
+    /** This method is called from within the constructor to
+     * initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is
+     * always regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        mainPanel = new javax.swing.JPanel();
+        addressLabel = new javax.swing.JLabel();
+        addressComboBox = new javax.swing.JComboBox();
+        portLabel = new javax.swing.JLabel();
+        portSpinner = new javax.swing.JSpinner();
+        passphraseLabel = new javax.swing.JLabel();
+        passphrasePasswordField = new javax.swing.JPasswordField();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        logTextArea = new javax.swing.JTextArea();
+
+        mainPanel.setName("mainPanel"); // NOI18N
+
+        org.jdesktop.application.ResourceMap resourceMap = org.jdesktop.application.Application.getInstance(secureudpserver.SecureUdpServerApp.class).getContext().getResourceMap(SecureUdpServerView.class);
+        addressLabel.setText(resourceMap.getString("addressLabel.text")); // NOI18N
+        addressLabel.setName("addressLabel"); // NOI18N
+
+        addressComboBox.setEditable(true);
+        addressComboBox.setName("addressComboBox"); // NOI18N
+        addressComboBox.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addressComboBoxActionPerformed(evt);
+            }
+        });
+
+        portLabel.setText(resourceMap.getString("portLabel.text")); // NOI18N
+        portLabel.setName("portLabel"); // NOI18N
+
+        portSpinner.setModel(new javax.swing.SpinnerNumberModel(45454, 0, 65535, 1));
+        portSpinner.setName("portSpinner"); // NOI18N
+        portSpinner.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                portSpinnerStateChanged(evt);
+            }
+        });
+
+        passphraseLabel.setText(resourceMap.getString("passphraseLabel.text")); // NOI18N
+        passphraseLabel.setName("passphraseLabel"); // NOI18N
+
+        passphrasePasswordField.setText(resourceMap.getString("passphrasePasswordField.text")); // NOI18N
+        passphrasePasswordField.setName("passphrasePasswordField"); // NOI18N
+
+        jScrollPane1.setName("jScrollPane1"); // NOI18N
+
+        logTextArea.setColumns(20);
+        logTextArea.setEditable(false);
+        logTextArea.setRows(5);
+        logTextArea.setName("logTextArea"); // NOI18N
+        jScrollPane1.setViewportView(logTextArea);
+
+        org.jdesktop.layout.GroupLayout mainPanelLayout = new org.jdesktop.layout.GroupLayout(mainPanel);
+        mainPanel.setLayout(mainPanelLayout);
+        mainPanelLayout.setHorizontalGroup(
+            mainPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(mainPanelLayout.createSequentialGroup()
+                .add(mainPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                    .add(mainPanelLayout.createSequentialGroup()
+                        .add(mainPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(mainPanelLayout.createSequentialGroup()
+                                .add(39, 39, 39)
+                                .add(mainPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING)
+                                    .add(addressLabel)
+                                    .add(portLabel)))
+                            .add(mainPanelLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .add(passphraseLabel)))
+                        .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                        .add(mainPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+                            .add(addressComboBox, 0, 276, Short.MAX_VALUE)
+                            .add(mainPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.TRAILING, false)
+                                .add(org.jdesktop.layout.GroupLayout.LEADING, passphrasePasswordField)
+                                .add(org.jdesktop.layout.GroupLayout.LEADING, portSpinner))))
+                    .add(mainPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 360, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        mainPanelLayout.setVerticalGroup(
+            mainPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING)
+            .add(mainPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .add(mainPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(addressLabel)
+                    .add(addressComboBox, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(mainPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.LEADING, false)
+                    .add(portLabel, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .add(portSpinner))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(mainPanelLayout.createParallelGroup(org.jdesktop.layout.GroupLayout.BASELINE)
+                    .add(passphrasePasswordField, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, org.jdesktop.layout.GroupLayout.PREFERRED_SIZE)
+                    .add(passphraseLabel))
+                .addPreferredGap(org.jdesktop.layout.LayoutStyle.RELATED)
+                .add(jScrollPane1, org.jdesktop.layout.GroupLayout.DEFAULT_SIZE, 156, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        setComponent(mainPanel);
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void addressComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addressComboBoxActionPerformed
+        try {
+            this.listenerBindingChanged();
+        } catch (Exception ex) {
+            Logger.getLogger(SecureUdpServerView.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_addressComboBoxActionPerformed
+
+    private void portSpinnerStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_portSpinnerStateChanged
+        try {
+            this.listenerBindingChanged();
+        } catch (Exception ex) {
+            Logger.getLogger(SecureUdpServerView.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_portSpinnerStateChanged
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox addressComboBox;
+    private javax.swing.JLabel addressLabel;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JTextArea logTextArea;
+    private javax.swing.JPanel mainPanel;
+    private javax.swing.JLabel passphraseLabel;
+    private javax.swing.JPasswordField passphrasePasswordField;
+    private javax.swing.JLabel portLabel;
+    private javax.swing.JSpinner portSpinner;
+    // End of variables declaration//GEN-END:variables
+}

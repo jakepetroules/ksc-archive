@@ -1,0 +1,35 @@
+<h1>Assignment 3</h1>
+
+<script type="text/javascript">
+/*<![CDATA[*/
+function computeSum()
+{
+	var sum = 0;
+	
+	// Go through each input...
+	for (var i = 1; i <= 5; i++)
+	{
+		// Add its value to our summation variable
+		sum += parseInt(document.getElementById('input' + i).value);
+	}
+	
+	// And finally display the result to the user
+	document.getElementById('sum').innerHTML = sum;
+	
+	return false;
+}
+/*]]>*/
+</script>
+
+<p>Enter 5 numbers and click calculate to compute their sum (JavaScript required).</p>
+
+<form action="" onsubmit="return computeSum();">
+	<div>Input 1: <input id="input1" type="text" /></div>
+	<div>Input 2: <input id="input2" type="text" /></div>
+	<div>Input 3: <input id="input3" type="text" /></div>
+	<div>Input 4: <input id="input4" type="text" /></div>
+	<div>Input 5: <input id="input5" type="text" /></div>
+	<div><input type="submit" value="Calculate" /></div>
+</form>
+
+<p>The sum of the inputs is: <span id="sum"></span></p>

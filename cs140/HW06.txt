@@ -1,0 +1,5 @@
+The program prints an introduction message to the user explaining what the program does, and then creates a Scanner and Random object, and a boolean variable to store whether the user wants to play again. The program then enters a do-while loop and generates 3 random numbers. The program then initializes 3 boolean variables specifying whether the generated numbers were all the same, whether two were the same, or whether none were the same. The program then prints the numbers to the screen, and checks whether the numbers were all the same or none were the same.
+
+If it is true, the program checks to see if the numbers were all the same, and tells the user they are a winner if it is true. Then the program asks the user whether they want to play again and stores the result in the playAgain boolean variable. The loop will end if the user does not enter 'y' or 'Y'.
+
+The program then checks if only two numbers were the same in an else-if statement, and gives the user a free spin by setting the playAgain variable to true so the loop ends and restarts from the beginning.

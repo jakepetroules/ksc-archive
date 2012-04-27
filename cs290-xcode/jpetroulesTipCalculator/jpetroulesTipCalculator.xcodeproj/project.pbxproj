@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		141CF15B14772473003C4AC2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 141CF15A14772473003C4AC2 /* Cocoa.framework */; };
+		141CF16514772473003C4AC2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 141CF16314772473003C4AC2 /* InfoPlist.strings */; };
+		141CF16714772473003C4AC2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 141CF16614772473003C4AC2 /* main.m */; };
+		141CF16B14772473003C4AC2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 141CF16914772473003C4AC2 /* Credits.rtf */; };
+		141CF16E14772473003C4AC2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 141CF16D14772473003C4AC2 /* AppDelegate.m */; };
+		141CF17114772473003C4AC2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141CF16F14772473003C4AC2 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		141CF15614772473003C4AC2 /* jpetroulesTipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jpetroulesTipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		141CF15A14772473003C4AC2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		141CF15D14772473003C4AC2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		141CF15E14772473003C4AC2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		141CF15F14772473003C4AC2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		141CF16214772473003C4AC2 /* jpetroulesTipCalculator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jpetroulesTipCalculator-Info.plist"; sourceTree = "<group>"; };
+		141CF16414772473003C4AC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		141CF16614772473003C4AC2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		141CF16814772473003C4AC2 /* jpetroulesTipCalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jpetroulesTipCalculator-Prefix.pch"; sourceTree = "<group>"; };
+		141CF16A14772473003C4AC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		141CF16C14772473003C4AC2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		141CF16D14772473003C4AC2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		141CF17014772473003C4AC2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		141CF15314772473003C4AC2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141CF15B14772473003C4AC2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		141CF14B14772472003C4AC2 = {
+			isa = PBXGroup;
+			children = (
+				141CF16014772473003C4AC2 /* jpetroulesTipCalculator */,
+				141CF15914772473003C4AC2 /* Frameworks */,
+				141CF15714772473003C4AC2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		141CF15714772473003C4AC2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				141CF15614772473003C4AC2 /* jpetroulesTipCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		141CF15914772473003C4AC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				141CF15A14772473003C4AC2 /* Cocoa.framework */,
+				141CF15C14772473003C4AC2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		141CF15C14772473003C4AC2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				141CF15D14772473003C4AC2 /* AppKit.framework */,
+				141CF15E14772473003C4AC2 /* CoreData.framework */,
+				141CF15F14772473003C4AC2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		141CF16014772473003C4AC2 /* jpetroulesTipCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				141CF16C14772473003C4AC2 /* AppDelegate.h */,
+				141CF16D14772473003C4AC2 /* AppDelegate.m */,
+				141CF16F14772473003C4AC2 /* MainMenu.xib */,
+				141CF16114772473003C4AC2 /* Supporting Files */,
+			);
+			path = jpetroulesTipCalculator;
+			sourceTree = "<group>";
+		};
+		141CF16114772473003C4AC2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				141CF16214772473003C4AC2 /* jpetroulesTipCalculator-Info.plist */,
+				141CF16314772473003C4AC2 /* InfoPlist.strings */,
+				141CF16614772473003C4AC2 /* main.m */,
+				141CF16814772473003C4AC2 /* jpetroulesTipCalculator-Prefix.pch */,
+				141CF16914772473003C4AC2 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		141CF15514772473003C4AC2 /* jpetroulesTipCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 141CF17414772473003C4AC2 /* Build configuration list for PBXNativeTarget "jpetroulesTipCalculator" */;
+			buildPhases = (
+				141CF15214772473003C4AC2 /* Sources */,
+				141CF15314772473003C4AC2 /* Frameworks */,
+				141CF15414772473003C4AC2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jpetroulesTipCalculator;
+			productName = jpetroulesTipCalculator;
+			productReference = 141CF15614772473003C4AC2 /* jpetroulesTipCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		141CF14D14772472003C4AC2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 141CF15014772472003C4AC2 /* Build configuration list for PBXProject "jpetroulesTipCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 141CF14B14772472003C4AC2;
+			productRefGroup = 141CF15714772473003C4AC2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				141CF15514772473003C4AC2 /* jpetroulesTipCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		141CF15414772473003C4AC2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141CF16514772473003C4AC2 /* InfoPlist.strings in Resources */,
+				141CF16B14772473003C4AC2 /* Credits.rtf in Resources */,
+				141CF17114772473003C4AC2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		141CF15214772473003C4AC2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141CF16714772473003C4AC2 /* main.m in Sources */,
+				141CF16E14772473003C4AC2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		141CF16314772473003C4AC2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141CF16414772473003C4AC2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		141CF16914772473003C4AC2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141CF16A14772473003C4AC2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		141CF16F14772473003C4AC2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141CF17014772473003C4AC2 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		141CF17214772473003C4AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		141CF17314772473003C4AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		141CF17514772473003C4AC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jpetroulesTipCalculator/jpetroulesTipCalculator-Prefix.pch";
+				INFOPLIST_FILE = "jpetroulesTipCalculator/jpetroulesTipCalculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		141CF17614772473003C4AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jpetroulesTipCalculator/jpetroulesTipCalculator-Prefix.pch";
+				INFOPLIST_FILE = "jpetroulesTipCalculator/jpetroulesTipCalculator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		141CF15014772472003C4AC2 /* Build configuration list for PBXProject "jpetroulesTipCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141CF17214772473003C4AC2 /* Debug */,
+				141CF17314772473003C4AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		141CF17414772473003C4AC2 /* Build configuration list for PBXNativeTarget "jpetroulesTipCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141CF17514772473003C4AC2 /* Debug */,
+				141CF17614772473003C4AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 141CF14D14772472003C4AC2 /* Project object */;
+}

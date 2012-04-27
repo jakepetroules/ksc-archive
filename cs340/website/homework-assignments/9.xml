@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="9.xsl"?>
+<?xml-stylesheet type="text/css" href="9.css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>CS340 RSS</title>
+		<link>http://cs340.jake.petroules.com/</link>
+		<description>Jake Petroules KSC CS340-01 Homework Website</description>
+		<language>en-US</language>
+		<atom:link href="http://cs340.jake.petroules.com/homework-assignments/9.xml" rel="self" type="application/rss+xml" />
+
+		<item>
+			<title>CS340 HW01</title>
+			<link>http://cs340.jake.petroules.com/homework-assignments/1</link>
+			<guid>http://cs340.jake.petroules.com/homework-assignments/1</guid>
+			<description>
+				This is my first homework assignment. It lists usability requirements for the homework website.
+			</description>
+		</item>
+		
+		<item>
+			<title>CS340 HW02</title>
+			<link>http://cs340.jake.petroules.com/homework-assignments/2</link>
+			<guid>http://cs340.jake.petroules.com/homework-assignments/2</guid>
+			<description>
+				This is my second homework assignment. It demonstrates some CSS features.
+			</description>
+		</item>
+		
+		<item>
+			<title>CS340 HW03</title>
+			<link>http://cs340.jake.petroules.com/homework-assignments/3</link>
+			<guid>http://cs340.jake.petroules.com/homework-assignments/3</guid>
+			<description>
+				This is my third homework assignment. It is a JavaScript calculator which sums 5 values.
+			</description>
+		</item>
+	</channel>
+</rss>

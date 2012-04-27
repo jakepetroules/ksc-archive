@@ -1,0 +1,43 @@
+Prompt the user with a menu:
+    Enter 1 to draw a line
+    Enter 2 to draw a rectangle
+    Enter 3 to draw a square
+    Enter 4 to draw a triangle
+
+If the user entered 1:
+    Prompt the user for a length N
+    Output N * characters
+Else if the user entered 2:
+    Prompt the user for a length L and a width W
+    For each length L
+        For each width W
+            Output a *
+        End for
+
+        Output a new line
+    End for
+Else if the user entered 3:
+    Prompt the user for a width D
+    For each width D
+        For each width D
+            Output a *
+        End for
+
+        Output a new line
+    End for
+Else if the user entered 4:
+    Prompt the user for a height H and a base B
+    For each height H using iterator I
+        Determine line width as B * ((I + 1) / H)
+        Determine pad width as (B - line width) / 2
+
+        For each pad width P
+            Output a space
+        End for
+
+        For each line width L
+            Output a *
+        End for
+
+        Output a new line
+    End for

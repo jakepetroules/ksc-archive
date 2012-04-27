@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 11.875" name="DSAss02_PetroulesJ">
+  <logicalClassDesignerModelMoniker Id="5fd8d6a6-dca6-405c-a3f5-b0693c778b92" />
+  <nestedChildShapes>
+    <classShape Id="d1191e03-65b9-4b8a-98a4-f4a343416f21" absoluteBounds="0.5, 0.75, 4.375, 2.8242186754941945" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="0e601729-4146-4b26-8e3a-a356854d6b23" LastKnownName="Country" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="6921444a-4ff1-499d-b276-eb4a40eab1c0" absoluteBounds="0.515, 1.1400000000000001, 4.3450000000000006, 0.68164060264825832" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="186bc130-4ab7-4a48-8a68-c8322e8f00e1" absoluteBounds="0.515, 1.8316406026482583, 4.3450000000000006, 1.642578072845936" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c17af64f-2037-4682-96ee-c7dbc2bab7b4" absoluteBounds="1.75, 3.75, 3.125, 2.5039061854283013" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="6bf76325-c0eb-46a8-b552-50bb8e84c970" LastKnownName="CountryCollection" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="e9a1adeb-ff4a-4539-8da6-96aed5705794" absoluteBounds="1.7649999999999997, 4.1400000000000006, 3.0949999999999998, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="74e5b561-ada4-4dd3-a6ae-1d6df11b651a" absoluteBounds="1.7649999999999997, 4.35117186754942, 3.0949999999999998, 1.8027343178788819" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a5d084c-9767-46b6-a1ca-7c8c2f582cac" absoluteBounds="2.25, 7.5, 2.625, 2.5039061854283009" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="f667a717-18ae-4729-9aa1-f826bf755ae0" LastKnownName="&lt;Driver Class&gt;" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="ed488397-6cd1-4e6f-bc10-a30893cdb251" absoluteBounds="2.265, 7.8900000000000006, 2.5949999999999998, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="b48d35c0-d9e6-4532-a164-7c65b3b10627" absoluteBounds="2.265, 8.4214843576153129, 2.5949999999999998, 1.4824218278129895" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <commentShape Id="c85401b1-f7c1-405f-b30e-a2cddf474595" absoluteBounds="5, 7.5, 3.625, 4.125" customColor="251, 247, 200">
+      <commentMoniker Id="ea9d99be-3d0a-4fd0-926c-b650e8490ee0" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="6401f85f-1ae2-4911-9099-654ff28f2d90" absoluteBounds="5, 0.75, 3.625, 2.625" customColor="251, 247, 200">
+      <commentMoniker Id="7c1a1977-3546-4e51-9295-8ab1b0e032e3" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="a9f9dab1-f44a-4565-8314-14bec913c4e2" absoluteBounds="5, 3.75, 3.625, 3.625" customColor="251, 247, 200">
+      <commentMoniker Id="3d855733-5940-47a1-a8e1-9d5fdc6144c7" />
+      <relativeChildShapes />
+    </commentShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

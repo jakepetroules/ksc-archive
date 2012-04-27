@@ -1,0 +1,128 @@
+DoctorQueue::getName() method
+START
+	return name
+END
+
+DoctorQueue::isAvailable() method
+START
+	return available
+END
+
+DoctorQueue::setName() method
+START
+	name := <value>
+END
+
+DoctorQueue::setAvailable() method
+START
+	available := <value>
+END
+
+---
+
+ClinicPatient::getId() method
+START
+	return id
+END
+
+ClinicPatient::getName() method
+START
+	return name
+END
+
+ClinicPatient::getTelephoneNumber() method
+START
+	return telephoneNumber
+END
+
+ClinicPatient::setId() method
+START
+	id := <value>
+END
+
+ClinicPatient::setName() method
+START
+	name := <value>
+END
+
+ClinicPatient::setTelephoneNumber() method
+START
+	telephoneNumber := <value>
+END
+
+---
+
+ClinicMonitor::checkQueueState() method
+START
+	Get doctor name from user
+	Find doctor
+	Print status of doctor's queue (open or closed) or error message if doctor is not found
+END
+ 
+ClinicMonitor::setQueueState() method
+START
+	Get doctor name from user
+	Find doctor
+	Get "open" or "close" from user
+	Set queue to open or closed depending on user's input or error message if doctor is not found
+END
+
+ClinicMonitor::patientCheckIn() method
+START
+	Get patient ID from user
+	Get patient name from user
+	Get telephoneNumber from user
+	Get desired doctor name from user
+
+	Find doctor
+	if doctor is available
+		Add patient to queue
+	else
+		Print error message
+END
+
+ClinicMonitor::patientCheckOut() method
+START
+	Get patient name from user
+	Find doctor assigned to patient
+	Remove patient from doctor's queue
+END
+
+ClinicMonitor::listDoctors() method
+START
+	For each doctor in the listDoctors
+		Print doctor's name
+END
+
+ClinicMonitor::listQueueContents() method
+START
+	Get doctor name from user
+	Find doctor
+	If doctor was found
+		Print number of patients in doctor's queue
+		For each patient in doctor's list
+			Print patient's name
+	else
+		Print error message
+END
+
+ClinicMonitor::checkForPatient() method
+START
+	Get doctor name from user
+	Get patient name from user
+	Find patient's doctor
+	Find proposed doctor
+	If proposed doctor was found
+		If patient was found
+			Print whether the patient is actually in the expected doctor's queue
+END
+
+ClinicMonitor::switchPatientPhysician() method
+START
+	Get patient name from user
+	If patient found
+		Get new physician name from user
+		If physician found
+			Remove patient from current physician's queue
+			Add patient to new physician's queue
+END

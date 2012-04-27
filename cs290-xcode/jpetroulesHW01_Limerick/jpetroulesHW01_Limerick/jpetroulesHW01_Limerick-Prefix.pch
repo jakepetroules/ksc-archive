@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'jpetroulesHW01_Limerick' target in the 'jpetroulesHW01_Limerick' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

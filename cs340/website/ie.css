@@ -1,0 +1,7 @@
+/* This file may not validate but IE needs it because it is incompetent */
+
+.clearfix
+{
+    display: block;
+    zoom: 1;
+}

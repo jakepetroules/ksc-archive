@@ -1,0 +1,72 @@
+/This program calculates 21*19*43 and stores it in PRODUCT
+
+	ORG	100
+
+/Initialize first set of multiplicands
+	LOAD	A
+	STORE	X
+	LOAD	B
+	STORE	Y
+
+/Multiply first set
+	LOAD	DONE1
+	STORE	ENDSUB
+	JUMP	MPY
+END1,	LOAD	PROD
+	STORE	FIRST
+
+/Initialize second set of multiplicands
+	LOAD	FIRST
+	STORE	X
+	LOAD	C
+	STORE	Y
+
+/Multiply second set
+	LOAD	DONE2
+	STORE	ENDSUB
+	JUMP	MPY
+END2,	LOAD	PROD
+	STORE	SECOND
+
+/Add them
+	LOAD	SECOND
+	STORE	PRODUCT
+
+/End
+	HALT
+
+/Variables section
+ZERO,	DEC	0
+ONE,	DEC	1
+
+/The address that the multiplication subroutine should jump to when finished
+ENDSUB,	DEC	0
+
+/Our four input variables
+A,	DEC	21
+B,	DEC	19
+C,	DEC	43
+
+X,	DEC	0	/Dummy variable for multiplicand 1
+Y,	DEC	0	/Dummy variable for multiplicand 2
+PROD,	DEC	0	/Product of X and Y
+
+FIRST,	DEC	0	/Product of the first two numbers
+SECOND,	DEC	0	/Product of the second two numbers
+PRODUCT, DEC	0	/Product of both products
+
+DONE1,	HEX	107	/Address of END1
+DONE2,	HEX	110	/Address of END2
+
+/Multiply Subroutine
+MPY,	LOAD	X
+	STORE	PROD
+MPYL,	LOAD	Y		/Decrement multiplier
+	SUBT	ONE
+	STORE	Y
+	SKIPCOND 810		/Skip if zero
+	JUMPI	ENDSUB		/Multiply complete: RETURN
+	LOAD	PROD		/Add value X to sum in PROD
+	ADD	X
+	STORE	PROD
+	JUMP	MPYL		/Loop for next iteration

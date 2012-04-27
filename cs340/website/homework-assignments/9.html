@@ -1,0 +1,62 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+$(document).ready(function()
+{
+	var chrome = $.browser.chrome = /chrome/.test(navigator.userAgent.toLowerCase());
+	if (!chrome)
+	{
+		start();
+	}
+	else
+	{
+		document.getElementById('content').innerHTML = 'This doesn\'t work in Chrome due to a Chrome bug, try Firefox instead.';
+	}
+});
+
+function start()
+{
+	// load xsl stylesheet
+	var xsl = loadXMLDocument('9.xsl');
+	
+	// create anonymous inner function - onload xsl ..
+	xsl.onload = function()
+	{
+		// load the rss document
+		var rss = loadXMLDocument('9.xml');
+		rss.onload = function()
+		{
+			// transform the rss using stylesheet
+			var result = applyTransform(rss, xsl);
+			
+			// display resulting XHTML
+			displayTransformedRss(result);
+		}
+	}
+}
+
+function loadXMLDocument(url)
+{
+	var doc = "";
+	doc = document.implementation.createDocument("", "", null);
+	doc.load(url);
+	return doc;
+}
+
+function applyTransform(rss, xsl)
+{
+	var result;
+	var xsltProcessor = new XSLTProcessor();
+	xsltProcessor.importStylesheet(xsl);
+	result = xsltProcessor.transformToFragment(rss, document);
+	return result;
+}
+
+function displayTransformedRss(xhtml)
+{
+	document.getElementById("content").innerHTML = '';
+	document.getElementById("content").appendChild(xhtml);
+}
+</script>
+
+<div id="content">Loading...</div>

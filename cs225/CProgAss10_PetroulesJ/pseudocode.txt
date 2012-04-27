@@ -1,0 +1,43 @@
+The program presents the user with a menu:
+
+Choose one of the following options:
+1 - Create a new file
+2 - Modify an existing file
+3 - Display an existing file
+4 - Delete an existing file
+0 - Exit the application
+
+Prompt for a number N
+
+If N = 1
+    Prompt for file name F
+    Open a file stream for file F
+    Loop while user does not enter "STOP"
+        Send the line of input from the user to the file stream
+    End loop
+Else if N = 2
+    Prompt for file name F
+    Ask the user if they want to append
+    If user wanted to append
+        Open a file stream for file F in append mode
+    Else
+        Open a file stream for file F in overwrite mode
+    End if
+    Loop while user does not enter "STOP"
+        Send the line of input from the user to the file stream
+    End loop
+Else if N = 3
+    Prompt for file name F
+    Open a file stream for file F
+    Loop while the file stream is not at the end of the file
+        Display a line from the file
+    End loop
+Else if N = 4
+    Go to "Else if N = 3"
+    Prompt the user for confirmation to delete the file
+    If user entered yes
+        Delete file
+    End if
+Else
+    Exit program
+End if

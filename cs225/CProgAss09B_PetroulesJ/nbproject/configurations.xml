@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="80">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+      <itemPath>CollegeMember.h</itemPath>
+      <itemPath>EmpAcademicRecord.h</itemPath>
+      <itemPath>EmpEmploymentHistory.h</itemPath>
+      <itemPath>EmpExtraCurricular.h</itemPath>
+      <itemPath>EmpPersonalInfo.h</itemPath>
+      <itemPath>EmpPublicationLog.h</itemPath>
+      <itemPath>Employee.h</itemPath>
+      <itemPath>Helpers.h</itemPath>
+      <itemPath>Student.h</itemPath>
+      <itemPath>properties.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+      <itemPath>pseudocode.txt</itemPath>
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>CollegeMain.cpp</itemPath>
+      <itemPath>CollegeMember.cpp</itemPath>
+      <itemPath>EmpAcademicRecord.cpp</itemPath>
+      <itemPath>EmpEmploymentHistory.cpp</itemPath>
+      <itemPath>EmpExtraCurricular.cpp</itemPath>
+      <itemPath>EmpPersonalInfo.cpp</itemPath>
+      <itemPath>EmpPublicationLog.cpp</itemPath>
+      <itemPath>Employee.cpp</itemPath>
+      <itemPath>Student.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+      </compileType>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <remote-sources-mode>LOCAL_SOURCES</remote-sources-mode>
+        <compilerSet>default</compilerSet>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+    </conf>
+  </confs>
+</configurationDescriptor>

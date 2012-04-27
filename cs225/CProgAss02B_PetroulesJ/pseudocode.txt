@@ -1,0 +1,12 @@
+Get N = the number of bars from the user
+Get C = the character to be used for the bar chart from the user
+
+repeat N times:
+    Generate R = random number which is the length of the bar
+
+    repeat R times:
+        Print the character C
+    end repeat
+
+    Print a new line
+end repeat

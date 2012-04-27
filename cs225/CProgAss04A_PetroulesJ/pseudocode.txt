@@ -1,0 +1,63 @@
+Present the user with the following menu:
+(1) Add/edit a student
+(2) Add a course
+(3) Remove a student
+(4) Remove a course
+(5) Get student count
+(6) Get course count
+(7) Print matrix
+(0) Quit
+
+If the user chose 1:
+    Prompt for and obtain student ID
+    Prompt for and obtain student name
+    Prompt for and obtain scores for each course the student is in
+    If a student with the given ID already exists:
+        Replace that student with current information
+    Else
+        Add current information to student list
+Else if the user chose 2:
+    Prompt for and obtain name of course
+    Add course to course list
+Else if the user chose 3:
+    Prompt for and obtain name of student to remove
+    Loop through students:
+        If current student name = given student name
+            Store index
+            Break
+        End if
+    End loop
+
+    If we found a student:
+        Print "student removed"
+    Else
+        Print "no changes made"
+Else if the user chose 4:
+    Prompt for and obtain name of course to remove
+    Loop through courses:
+        If current course name = given course name
+            Store index
+            Break
+        End if
+    End loop
+
+    If we found a course:
+        Print "course removed"
+    Else
+        Print "no changes made"
+Else if the user chose 5:
+    Print "There are N students in the list"
+Else if the user chose 6:
+    Print "There are N courses in the list"
+Else if the user chose 7:
+    Print a table with the following headers: ID, Name, [Courses 1..n], Average, Max, Min
+    For each student:
+        Print row with student ID, student name, scores for courses 1..n, average score, max score, and minimum score
+    End for
+
+    Print a table with the following headers: Name, Average, Max, Min
+    For each course:
+        Print row with course name, average course score, maximum course score, and minimum course score
+    End for
+Else
+    Exit

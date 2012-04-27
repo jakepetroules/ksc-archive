@@ -1,0 +1,5 @@
+The program reads in the information from the input file one line at a time.
+
+The program adds the name and age on the line to the beginning of the list of the indicator is a 1, or the end if it is a 2. If the indicator is a 3, the program deletes a node from the beginning of the list and prints the node that was deleted. Similarly, if it is a 4, a node is deleted from the end of the list, and printed.
+
+The program prints a header message to the output file, then continues to print the contents of the list along with a message of the node that was added, for each node that is added.

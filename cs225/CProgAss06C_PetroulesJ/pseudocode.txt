@@ -1,0 +1,19 @@
+The program prints a message to the user saying that the deck is being created.
+The program creates a complete deck of 52 cards of every face and every suit.
+
+The program prints a message to the user saying the deck is being shuffled.
+The program shuffles the deck:
+    The program loops 100 times
+        The program loops through each card in the deck
+            The program generates a number between 0 and 100, X
+            If X > 50
+                Swap current card with card before it
+            End if
+        End loop
+    End loop
+
+For each card in the deck
+    The program removes the card from the top of the deck
+    The program prints the suit and face of the card
+    The program prints the number of cards remaining in the deck
+End for

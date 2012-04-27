@@ -1,0 +1,3 @@
+The program instantiates a new deck of cards, then fills it with each card. The program then prints the deck.
+
+The program then shuffles the deck and prints the contents of the deck again, showing the number of cards left after each card is printed.

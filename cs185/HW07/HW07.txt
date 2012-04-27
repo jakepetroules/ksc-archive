@@ -1,0 +1,13 @@
+@author Jake Petroules
+@course CS-185-01
+@filename HW07.txt
+
+The program prints a message explaining what it does.
+
+The program creates an polymorphic array of LibraryItems, containing two of each:
+Novel, MyText, and Weekly. It then prints the contents of this array.
+
+It then sorts the array using the selection sort algorithm, and prints a message
+stating that it did so.
+
+It then prints the contents of the array again, this time sorted.

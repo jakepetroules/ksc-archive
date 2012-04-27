@@ -1,0 +1,169 @@
+The Country class represents a country and provides access to related demographic and financial data.
+
+Country::getGrossNationalIncome() method
+START
+	return GNI
+END
+
+Country::getName() method
+START
+	return name
+END
+
+Country::getPerCapitaIncome() method
+START
+	return gni / population
+END
+
+Country::getPopulation() method
+START
+	return population
+END
+
+Country::setGrossNationalIncome() method
+START
+	gni := <value>
+END
+
+Country::setName() method
+START
+	name := <value>
+END
+
+Country::setPopulation() method
+START
+	population := <value>
+END
+
+---
+
+The CountryCollection class represents a list of countries.
+
+// Fills the collection with data from first 25 countries with the highest GNI in the world, removing any previous items from the list.
+CountryCollection::fillWithData() method
+START
+	Clear all items from the list
+
+	For each of the 25 countries...
+		Add country <n> to the list
+END
+ 
+CountryCollection::getAveragePerCapitaIncome() method
+START
+	Let sum be an integer
+
+	For each country in the list
+		sum := sum + PCI of country <n>
+
+	return sum / number of countries
+END
+
+CountryCollection::getHighestPCICountry() method
+START
+	Let highest be the tentative highest PCI country
+
+	For each country in the list
+		if the PCI of country <n> is higher than the PCI of highest
+			highest := country <n>
+
+	return highest
+END
+
+CountryCollection::getLowestPCICountry() method
+START
+	Let lowest be the tentative lowest PCI country
+
+	For each country in the list
+		if the PCI of country <n> is lower than the PCI of lowest
+			lowest := country <n>
+
+	return lowest
+END
+
+// Gets the standard deviation of the countries in the list.
+// Refer to http://en.wikipedia.org/wiki/Standard_deviation for an explanation of standard deviation and related formulas for calculating it.
+CountryCollection::getStandardDeviation() method
+START
+	Let sum be an integer
+
+	For each country in the list
+		sum := sum + (PCI of country <n> - averagePCI) ^ 2;
+
+	return sqrt(sum / number of countries)
+END
+
+CountryCollection::indexOf(String name) method
+START
+	For each country in the list
+		if the name of country <n> is a case-insensitive match for n
+			return index of country<n>
+
+	return -1
+END
+
+CountryCollection::sortByPerCapitaIncome() method
+START
+	Sort the list with a comparable class:
+		Comparable(Country a, Country b)
+		START
+			if pci of a = pci of b
+				return 0
+			else if pci of a < pci of b
+				return -1
+			else
+				return 1
+		END
+END
+
+---
+
+SortSimulator:main() method
+START
+	Print list of options
+	do
+	{
+		get input
+		
+		switch (input)
+		{
+			case a:
+				prompt for and add a new country to the list
+			case r:
+				prompt for a filename and read a list of countries from it
+			case s:
+				prompt for a filename and save the list of the countries to it
+			case l:
+				perform all 5 sorts and print the time it took for each of them
+			case d:
+				for each country in the list, print its name, population and GNI
+			case c:
+				clear the list
+			case q:
+				quit the program
+		}
+	}
+	while (user did not enter quit)
+END
+
+SortSimulator::loadFile(String fileName) method
+START
+	while (the file has more data)
+	{
+		read name, population, GNI and store in a country object then add it to the list
+	}
+END
+
+SortSimulator::saveFile(String fileName, CountryCollection list) method
+START
+	for each country in the list
+	{
+		write name, population, GNI to file, one attribute on each line
+	}
+END
+
+SortSimulator::timeSort() method
+START
+	let start := current time milliseconds
+	run sort algorithm on copy of list
+	return current time - start
+END

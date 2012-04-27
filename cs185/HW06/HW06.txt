@@ -1,0 +1,5 @@
+The program creates an array of type Employee with 6 elements. It instantiates the first 3 as Salaried employees, and the second 3 as Hourly employees.
+
+The program then iterates through each object, invoking the toString method of each employee to print its data. This polymorphically chooses the correct class on which to invoke the method (Hourly or Salaried), of which each also call the parent (Employee)'s toString method and concatenates its own data to that result, returning it.
+
+The program then creates a SortAge array, assigning to it the elements of the employees array, and uses a type cast to print the name of the employee, and the interface's defined getAge() method to get their ages.

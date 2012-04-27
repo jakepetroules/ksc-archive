@@ -1,0 +1,9 @@
+Print an introduction message to the user
+Get a character from the user
+
+if the user entered (a):
+    ask the user for a number N
+    convert N to Celsius using the formula (f - 32) * 5/9 and print the result
+else if the user entered (b):
+    ask the user for a number N
+    convert N to Fahrenheit using the formula (c * 9/5) + 32 and print the result

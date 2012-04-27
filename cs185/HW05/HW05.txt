@@ -1,0 +1,17 @@
+@author Jake Petroules
+@course CS-185-01
+@filename HW05.txt
+
+The program prints a message to the user explaining what it does.
+
+The program then prints a message saying that a biography will be instantiated and printed.
+The program then instantiates a biography, specifying the title, number of pages, number of chapters and subject, and prints the object.
+
+The program then prints a message saying that a novel will be instantiated and printed.
+The program then instantiates a novel, specifying the title, number of pages, number of chapters and classification, and prints the object.
+
+The program then prints a message saying that a weekly will be instantiated and printed.
+The program then instantiates a weekly, specifying the title, number of pages, cover type and number of articles, and prints the object.
+
+The program then prints a message saying that a textbook will be instantiated and printed.
+The program then instantiates a textbook, specifying the title, number of pages and number of chapters, and prints the object.

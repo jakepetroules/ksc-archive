@@ -1,0 +1,3 @@
+The program prints a welcome message, and the headers of the ticket details. The program then instantiates a Scanner to read the input from the data.txt file and keeps reading tokens until none are left. In each iteration of the loop, the program instantiates a Ticket, and sets its properties (destination, departure time, base ticket price, and luggage count) with the values scanned from the file. The program adds the final price of each ticket to the running total, and then prints the ticket details. After all the tickets have finished being read from the file, the program prints a summary of the total income earned today from all the tickets.
+
+We used data from United Airlines one-way flights departing on December 6, 2009.

@@ -1,0 +1,147 @@
+Program starts
+
+Initialize 3 lists:
+CollegeMember
+Employee
+Student
+
+The user is presented with a menu:
+Select an option:
+addc - Add a college member
+adde - Add an employee
+adds - Add a student
+findc - Find a college member
+finde - Find an employee
+finds - Find a student
+listc - List the college members
+liste - List the employees
+lists - List the students
+listcs - List the college members (sorted)
+listes - List the employees (sorted)
+listss - List the students (sorted)
+exit - Exit the program
+
+Get an input from the user N
+
+If N = "addc"
+    Create new CollegeMember
+    get ID# from user
+    get first name from user
+    get last name from user
+    get address line 1 from user
+    get address line 2 from user
+    get state from user
+    get ZIP from user
+    get telephone# from user
+    get email from user
+    add the new CollegeMember to the CollegeMember list
+Else if N = "adde"
+    Create new Employee
+    get ID# from user
+    get first name from user
+    get last name from user
+    get address line 1 from user
+    get address line 2 from user
+    get state from user
+    get ZIP from user
+    get telephone# from user
+    get email from user
+    get department from user
+    get job title from user
+    get salary from user
+    get academic record reference number from user
+    get institution from user
+    get award obtained from user
+    get start date from user
+    get end date from user
+    get employment history reference number from user
+    get organization from user
+    get position held from user
+    get start date from user
+    get end date from user
+    get extra curricular reference number from user
+    get favorite sport from user
+    get other sport from user
+    get other interests from user
+    get personal info reference number from user
+    get ethnicity from user
+    get gender from user
+    get country of origin from user
+    get number of dependents from user
+    get publication log reference number from user
+    get publication title from user
+    get publication type from user
+    get publication date from user
+    add the new Employee to the Employee list
+Else if N = "adds"
+    Create new Student
+    get ID# from user
+    get first name from user
+    get last name from user
+    get address line 1 from user
+    get address line 2 from user
+    get state from user
+    get ZIP from user
+    get telephone# from user
+    get email from user
+    get academic department from user
+    get major from user
+    add the new Student to the Student list
+Else if N = "findc"
+    Get ID from user N
+    For each CollegeMember in the CollegeMember list
+        If current CollegeMember ID = N
+            Print info for current CollegeMember
+        End If
+    End For
+Else if N = "finde"
+    Get ID from user N
+    For each Employee in the Employee list
+        If current Employee ID = N
+            Print info for current Employee
+        End If
+    End For
+Else if N = "finds"
+    Get ID from user N
+    For each Student in the Student list
+        If current Student ID = N
+            Print info for current Student
+        End If
+    End For
+Else if N = "listc"
+    For each CollegeMember in the CollegeMember list
+        Print info for current CollegeMember
+    End For
+Else if N = "liste"
+    For each Employee in the Employee list
+        Print info for current Employee
+    End For
+Else if N = "lists"
+    For each Student in the Student list
+        Print info for current Student
+    End For
+Else if N = "listcs"
+    Copy CollegeMember list to new list
+    Run quicksort on the new list
+    For each CollegeMember in the new CollegeMember list
+        Print info for current CollegeMember
+    End For
+Else if N = "listes"
+    Copy Employee list to new list
+    Run quicksort on the new list
+    For each Employee in the new Employee list
+        Print info for current Employee
+    End For
+Else if N = "listss"
+    Copy Student list to new list
+    Run quicksort on the new list
+    For each Student in the new Student list
+        Print info for current Student
+    End For
+Else
+    The program exits
+End If
+
+If N is not "exit"
+    Return to show the user the menu
+End if

@@ -1,0 +1,16 @@
+.DS_Store
+*.suo
+*.pro.user
+.dep.inc
+cs2*/*_PetroulesJ/build/*
+cs2*/*_PetroulesJ/dist/*
+cs2*/*_PetroulesJ/nbproject/private/*
+cs430/*_PetroulesJ/build/*
+cs430/*_PetroulesJ/dist/*
+cs430/*_PetroulesJ/nbproject/private/*
+cs430/*_PetroulesJ/Source/*_PetroulesJ_Java/build/*
+cs430/*_PetroulesJ/Source/*_PetroulesJ_Java/dist/*
+cs430/*_PetroulesJ/Source/*_PetroulesJ_Java/nbproject/private/*
+cs490/midterm/udp-java/*/build/*
+cs490/midterm/udp-java/*/dist/*
+cs490/midterm/udp-java/*/nbproject/private/*

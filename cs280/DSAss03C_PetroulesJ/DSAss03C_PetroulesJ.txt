@@ -1,0 +1,191 @@
+The Country class represents a country and provides access to related demographic and financial data.
+
+Country::getGrossNationalIncome() method
+START
+	return GNI
+END
+
+Country::getName() method
+START
+	return name
+END
+
+Country::getPerCapitaIncome() method
+START
+	return gni / population
+END
+
+Country::getPopulation() method
+START
+	return population
+END
+
+Country::setGrossNationalIncome() method
+START
+	gni := <value>
+END
+
+Country::setName() method
+START
+	name := <value>
+END
+
+Country::setPopulation() method
+START
+	population := <value>
+END
+
+---
+
+The CountryCollection class represents a list of countries.
+
+// Fills the collection with data from first 25 countries with the highest GNI in the world, removing any previous items from the list.
+CountryCollection::fillWithData() method
+START
+	Clear all items from the list
+
+	For each of the 25 countries...
+		Add country <n> to the list
+END
+ 
+CountryCollection::getAveragePerCapitaIncome() method
+START
+	Let sum be an integer
+
+	For each country in the list
+		sum := sum + PCI of country <n>
+
+	return sum / number of countries
+END
+
+CountryCollection::getHighestPCICountry() method
+START
+	Let highest be the tentative highest PCI country
+
+	For each country in the list
+		if the PCI of country <n> is higher than the PCI of highest
+			highest := country <n>
+
+	return highest
+END
+
+CountryCollection::getLowestPCICountry() method
+START
+	Let lowest be the tentative lowest PCI country
+
+	For each country in the list
+		if the PCI of country <n> is lower than the PCI of lowest
+			lowest := country <n>
+
+	return lowest
+END
+
+// Gets the standard deviation of the countries in the list.
+// Refer to http://en.wikipedia.org/wiki/Standard_deviation for an explanation of standard deviation and related formulas for calculating it.
+CountryCollection::getStandardDeviation() method
+START
+	Let sum be an integer
+
+	For each country in the list
+		sum := sum + (PCI of country <n> - averagePCI) ^ 2;
+
+	return sqrt(sum / number of countries)
+END
+
+CountryCollection::indexOf(String name) method
+START
+	For each country in the list
+		if the name of country <n> is a case-insensitive match for n
+			return index of country<n>
+
+	return -1
+END
+
+CountryCollection::sortByPerCapitaIncome() method
+START
+	Sort the list with a comparable class:
+		Comparable(Country a, Country b)
+		START
+			if pci of a = pci of b
+				return 0
+			else if pci of a < pci of b
+				return -1
+			else
+				return 1
+		END
+END
+
+---
+
+Driver::Driver() constructor
+START
+	populateTable()
+END
+
+Driver:tableChanged() method
+START
+	Let country := the country for the cell that was changed
+	update PCI of country
+END
+
+Driver::addRow() method
+START
+	Add row to GUI table
+END
+
+Driver::getCountriesSorted() method
+START
+	Let sortedList := copy of unsorted countries list
+	sort sortedList
+END
+
+Driver::launchFindInTable() method
+START
+	Launch input dialog
+	If user clicked OK
+		Find country with the name corresponding to the user's input
+		if found
+			Highlight corresponding row in GUI table
+		else
+			Erase any current highlight
+			Display an error message
+END
+
+Driver::populateTable() method
+START
+	For each country in countries list
+		Add country <n> (name, gni, pci) to GUI table
+END
+
+Driver::removeRows() method
+START
+	Let selectedCountries := countries corresponding to rows currently selected in the GUI table
+	For each country in selectedCountries
+		remove country from countries list
+
+	populateTable()
+END
+
+// Displays a dialog showing the country with the lowest GNI, the country with the highest GNI, the average GNI of all countries in the list, and the standard deviation.
+Driver::showStatistics() method
+START
+	Let lowestGNI := get lowest GNI from countries list
+	Let highestGNI := get highest GNI from countries list
+	Let averageGNI := get average GNI from countries list
+	Let standardDeviation := get standard deviation from countries list
+
+	Let message :=  "Lowest GNI: " + lowestGNI
+					"Highest GNI: " + highestGNI
+					"Average GNI: " + averageGNI
+					"Standard deviation: " + standardDeviation
+
+	Show message box with message
+END
+
+Driver::updateSortOrder() method
+START
+	if list should be sorted
+		populateTable(getCountriesSorted())
+	else
+		populateTable(unsorted countries list)
+END

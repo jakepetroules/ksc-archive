@@ -1,0 +1,16 @@
+Prompt for and get the employee's name
+Prompt for and get the number of weeks in the month (4 or 5)
+
+For each week in the month:
+    Prompt for and get the hours worked for that week
+    Add the hours worked for the current week to the total hours worked for the month
+End for
+
+Print report showing:
+    Gross pay, which is 40 times the number of regular hours, plus 60 times the number of overtime hours
+    State tax deduction (20% of gross pay)
+    Education tax deduction (4% of gross pay)
+    Social Security deduction (2% of gross pay)
+    Medicare deduction (2% of gross pay)
+    Total deductions (20% + 4% + 2% + 2% = 28% of gross pay)
+    Final pay for the month (72% [100% - 28%] of gross pay)

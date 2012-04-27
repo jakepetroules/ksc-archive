@@ -1,0 +1,15 @@
+@author Jake Petroules
+@course CS-185-01
+@filename HW04.txt
+
+The program prints a message explaining to the user what the program does.
+
+The program then reads the data file, and checks the first few bytes to make sure it is the correct file type.
+
+The program then reads an integer from the data file to determine how many records are in it, and reads each record, adding the first 10 to the internal array and printing an error message for any subsequent records that are read.
+
+If an error occurs at any stage during this process, the program prints an error message and exits.
+
+The program then prints a message and prints the internal array of data in a nice tabular format.
+
+The program then sorts the array and prints a similar message and then prints the data again. 

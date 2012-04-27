@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		149C5CCE143F842B00045645 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149C5CCD143F842B00045645 /* Foundation.framework */; };
+		149C5CD1143F842B00045645 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 149C5CD0143F842B00045645 /* main.m */; };
+		149C5CD5143F842B00045645 /* jpetroulesCalculator.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 149C5CD4143F842B00045645 /* jpetroulesCalculator.1 */; };
+		149C5CDD143F847900045645 /* Calculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 149C5CDC143F847900045645 /* Calculator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		149C5CC7143F842B00045645 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				149C5CD5143F842B00045645 /* jpetroulesCalculator.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		149C5CC9143F842B00045645 /* jpetroulesCalculator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = jpetroulesCalculator; sourceTree = BUILT_PRODUCTS_DIR; };
+		149C5CCD143F842B00045645 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		149C5CD0143F842B00045645 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		149C5CD3143F842B00045645 /* jpetroulesCalculator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jpetroulesCalculator-Prefix.pch"; sourceTree = "<group>"; };
+		149C5CD4143F842B00045645 /* jpetroulesCalculator.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = jpetroulesCalculator.1; sourceTree = "<group>"; };
+		149C5CDB143F847900045645 /* Calculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Calculator.h; sourceTree = "<group>"; };
+		149C5CDC143F847900045645 /* Calculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Calculator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		149C5CC6143F842B00045645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149C5CCE143F842B00045645 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		149C5CBE143F842A00045645 = {
+			isa = PBXGroup;
+			children = (
+				149C5CCF143F842B00045645 /* jpetroulesCalculator */,
+				149C5CCC143F842B00045645 /* Frameworks */,
+				149C5CCA143F842B00045645 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		149C5CCA143F842B00045645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				149C5CC9143F842B00045645 /* jpetroulesCalculator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		149C5CCC143F842B00045645 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				149C5CCD143F842B00045645 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		149C5CCF143F842B00045645 /* jpetroulesCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				149C5CDB143F847900045645 /* Calculator.h */,
+				149C5CDC143F847900045645 /* Calculator.m */,
+				149C5CD0143F842B00045645 /* main.m */,
+				149C5CD4143F842B00045645 /* jpetroulesCalculator.1 */,
+				149C5CD2143F842B00045645 /* Supporting Files */,
+			);
+			path = jpetroulesCalculator;
+			sourceTree = "<group>";
+		};
+		149C5CD2143F842B00045645 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				149C5CD3143F842B00045645 /* jpetroulesCalculator-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		149C5CC8143F842B00045645 /* jpetroulesCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 149C5CD8143F842B00045645 /* Build configuration list for PBXNativeTarget "jpetroulesCalculator" */;
+			buildPhases = (
+				149C5CC5143F842B00045645 /* Sources */,
+				149C5CC6143F842B00045645 /* Frameworks */,
+				149C5CC7143F842B00045645 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jpetroulesCalculator;
+			productName = jpetroulesCalculator;
+			productReference = 149C5CC9143F842B00045645 /* jpetroulesCalculator */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		149C5CC0143F842A00045645 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 149C5CC3143F842A00045645 /* Build configuration list for PBXProject "jpetroulesCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 149C5CBE143F842A00045645;
+			productRefGroup = 149C5CCA143F842B00045645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				149C5CC8143F842B00045645 /* jpetroulesCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		149C5CC5143F842B00045645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				149C5CD1143F842B00045645 /* main.m in Sources */,
+				149C5CDD143F847900045645 /* Calculator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		149C5CD6143F842B00045645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		149C5CD7143F842B00045645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		149C5CD9143F842B00045645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jpetroulesCalculator/jpetroulesCalculator-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		149C5CDA143F842B00045645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jpetroulesCalculator/jpetroulesCalculator-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		149C5CC3143F842A00045645 /* Build configuration list for PBXProject "jpetroulesCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				149C5CD6143F842B00045645 /* Debug */,
+				149C5CD7143F842B00045645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		149C5CD8143F842B00045645 /* Build configuration list for PBXNativeTarget "jpetroulesCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				149C5CD9143F842B00045645 /* Debug */,
+				149C5CDA143F842B00045645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 149C5CC0143F842A00045645 /* Project object */;
+}

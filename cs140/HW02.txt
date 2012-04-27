@@ -1,0 +1,14 @@
+The program prints a message "This program determines the value of coins in a jar." to explain to the user what it does.
+
+The program creates a Scanner object to get input from the user.
+
+The program then asks for the number of quarters and stores the result in an integer variable.
+The program then asks for the number of dimes and stores the result in an integer variable.
+The program then asks for the number of nickels and stores the result in an integer variable.
+The program then asks for the number of pennies and stores the result in an integer variable.
+
+The program computes the dollar value of the coins using the following formula:
+
+(quarterCount * QUARTER_VALUE) + (dimeCount * DIME_VALUE) + (nickelCount * NICKEL_VALUE) + (pennyCount * PENNY_VALUE)
+
+The program then displays the number of each type of coin the user entered, and displays the summed dollar value of all the coins.

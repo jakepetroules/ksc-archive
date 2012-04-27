@@ -1,0 +1,18 @@
+Set again to 'n'
+
+Loop
+    Print message asking user to enter four names
+    Ask for and accept first name
+    Ask for and accept second name
+    Ask for and accept third name
+    Ask for and accept fourth name
+
+    // In the following lines, XX<n> refers to the names entered by the user - for example XX1 is the first name and XX2 is the second
+    Print the first message, "I love you XX1."
+    Print the second message, "Sorry I cannot tell you the same XX2, but I respect you and we will be friends."
+    Print the third message, "I wish I could have more than one spouse, XX3, because I would surely consider you. But I am with XX1. Love you anyway."
+    Print the fourth message, "Hey XX4, XX2 and XX3 are both single and unattached. Are you available and are you interested? I like XX3, but I am committed to XX1."
+    Print the last message, "Well, I have to go now, I have a dinner date with XX1. Bye."
+
+    Prompt the user for a character and set again to their input
+While again is 'y'

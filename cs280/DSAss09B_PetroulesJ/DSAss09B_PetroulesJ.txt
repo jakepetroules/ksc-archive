@@ -1,0 +1,130 @@
+Person::getId() method
+START
+	return id
+END
+
+Person::getBirthDate() method
+START
+	return birthDate
+END
+
+Person::setBirthDate() method
+START
+	birthDate := <value>
+END
+
+Person::getFirstName() method
+START
+	return firstName
+END
+
+Person::setFirstName() method
+START
+	firstName := <value>
+END
+
+Person::getGender() method
+START
+	return gender
+END
+
+Person::setGender() method
+START
+	gender := <value>
+END
+
+Person::getLastName() method
+START
+	return lastName
+END
+
+Person::setLastName() method
+START
+	lastName := <value>
+END
+
+Person::getTelephoneNumber() method
+START
+	return telephoneNumber
+END
+
+Person::setTelephoneNumber() method
+START
+	telephoneNumber := <value>
+END
+
+---
+
+Student::getMajor() method
+START
+	return major
+END
+
+Student::setMajor() method
+START
+	major := <value>
+END
+
+---
+
+Alumni::getEmployer() method
+START
+	return employer
+END
+
+Alumni::setEmployer() method
+START
+	employer := <value>
+END
+
+Alumni::getJobTitle() method
+START
+	return jobTitle
+END
+
+Alumni::setJobTitle() method
+START
+	jobTitle := <value>
+END
+
+---
+
+Employee::getAreaOfSpecialization() method
+START
+	return areaOfSpecialization
+END
+
+Employee::setAreaOfSpecialization() method
+START
+	areaOfSpecialization := <value>
+END
+
+Employee::getDepartment() method
+START
+	return department
+END
+
+Employee::setDepartment() method
+START
+	department := <value>
+END
+
+Employee::getEmployer() method
+START
+	return employer
+END
+
+Employee::setEmployer() method
+START
+	employer := <value>
+END
+
+Employee::getJobTitle() method
+START
+	return jobTitle
+END
+
+Employee::setJobTitle() method
+START
+	jobTitle := <value>
+END

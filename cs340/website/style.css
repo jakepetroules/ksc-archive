@@ -1,0 +1,74 @@
+body
+{
+	margin: 0;
+	padding: 0;
+}
+
+form
+{
+	font-family: Helvetica, sans-serif;
+}
+
+#head-wrapper
+{
+	background-image: url('/images/logo.png');
+	background-color: #000;
+}
+
+#head, #body, #footer
+{
+	margin: 0 auto;
+	width: 1000px;
+}
+
+#head
+{
+	color: #fff;
+	font-size: 250%;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+}
+
+#head a:link, #head a:visited, #head a:active, #head a:hover
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+#nav
+{
+	border-right: 1px solid #808080;
+	float: left;
+	padding: 1em;
+	width: 12em;
+}
+
+#content
+{
+	padding: 1em;
+	padding-left: 15em;
+}
+
+#footer
+{
+	border-top: 1px solid #808080;
+	margin-top: 1em;
+	text-align: center;
+}
+
+.clearfix
+{
+    display: block;
+}
+
+.clearfix:after
+{
+    clear: both;
+    content: '.';
+    display: block;
+    font-size: 0px;
+    height: 0px;
+    line-height: 0;
+    visibility: hidden;
+}

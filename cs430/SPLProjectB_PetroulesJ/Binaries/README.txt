@@ -1,0 +1,5 @@
+To run the C++ program in Windows, double-click SPLProjectB_PetroulesJ.exe. To run it in Mac OS X, Linux or any other operating system supported by Qt, you will need to install Qt and compile the program using the source code provided. Precompiled binaries are only provided for Windows.
+
+To run the Java program in any operating system, first ensure that Java is installed on the system and properly configured in your path, then open a terminal or command prompt and type the command: java -jar SPLProjectB_PetroulesJ.jar
+
+To run the C# program in Windows, double-click SPLProjectB_PetroulesJ.clr.exe. To run it in Mac OS X, Linux, or any other operating system, first ensure that Mono is installed on the system and properly configured in your path, then open a terminal and type the command: mono SPLProjectB_PetroulesJ.clr.exe, or simply double-click the file in the system's file manager if Mono is configured as such.

@@ -1,0 +1,10 @@
+This program will print the first few verses of the traveling song "One Hundred Bottles of Vodka".
+
+The program explains to the user what it does, and proceeds to ask them how many verses of the song they would like to be printed. The program then gets their input and checks to make sure the number they entered is in the range 1 to 100, continually asking them for proper input if their answer falls outside that range or the user enters an inappropriate value (such as a letter or word).
+
+The program then loops through the verses, printing the following lines for each iteration:
+	"<n> bottles of vodka on the wall"
+	"<n> bottles of vodka"
+	"If one of those bottles should happen to fall"
+
+followed by "<n-1> bottles of vodka on the wall" OR "No more bottles of vodka on the wall" and "Go to the store and buy some more" if <n-1> is equal to 0.

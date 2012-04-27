@@ -1,0 +1,17 @@
+﻿Here lies material information that doesn't necessarily need to be embedded into the game's code, but should be noted regardless.
+
+The colors of various materials (such as those used in sprites) are as follows (represented in RGB form):
+	Boulder		-		(183, 65, 14)
+	Bronze		-		(205, 127, 50)
+	Coal		Black	(0, 0, 0)
+	Copper		-		(184, 115, 51)
+	Densium		Yellow	(255, 255, 0)
+	Iron		-		(54, 54, 54)
+	Mithril		-		(135, 235, 235)
+	Steel		-		(228, 228, 228)
+	Tin			-		(238, 238, 238)
+
+Rock points = (mining level + 1) * 100
+Rock HP = (mining level + 1) * 3 (boulder = 3)
+Rock damage = (density ^ 2) / 2.5 (boulder = 249)
+Pickaxe damage = tensile / 3

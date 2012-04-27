@@ -1,0 +1,18 @@
+The program prints a message "This program reads a monetary amount and determines the fewest number of each bill and coin needed to represent that amount (starting with the highest, using a ten dollar bill as the maximum). Please note that this program uses doubles for calculation, so results may be slightly inaccurate in some cases. This problem could be solved by using the BigDecimal class."
+
+The program creates a Scanner object to get input from the user.
+
+The program asks for the money value and stores the result in a double variable.
+
+The program copies this variable's value into a new variable used for calculation.
+
+The program determines the number of the bill or coin using the formula:
+(moneyValue - (moneyValue % billOrCoinValue)) / billOrCoinValue
+
+The program subtracts the bill or coin count from the new money value variable.
+
+The program repeats the previous 2 processes for each bill and coin.
+
+The program creates a NumberFormat object to display monetary values.
+
+The program displays the output, which is the number of each type of bill and coin needed to represent the monetary value given by the user.

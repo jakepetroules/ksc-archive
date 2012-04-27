@@ -1,0 +1,7 @@
+1	Sue	12
+1	Sam	10
+2	Sarah	9
+1	Scott	11
+2	Sylvester	8
+2	Xerxes	13
+1	Jake	18

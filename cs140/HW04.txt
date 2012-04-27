@@ -1,0 +1,9 @@
+The program prints a message "This program prompts for the user's first and last name and generates a user ID using the first character of the first name, the first five characters of the last name, and a random number from to 10 to 99 inclusive."
+
+The program creates a Scanner object to get input from the user and a Random object to generate pseudorandom numbers.
+
+The program asks for the user's first name and reads it into a String variable.
+
+The program asks for the user's last name and reads it into a String variable.
+
+The program generates a user ID from the first letter of the user's first name, the first five letters of the user's last name, and a random number between 10 and 99, and displays it to the user.

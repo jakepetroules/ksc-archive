@@ -1,0 +1,8 @@
+//
+// Prefix header for all source files of the 'mpgCalc' target in the 'mpgCalc' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif

@@ -1,0 +1,47 @@
+<p>Here is a list of dogs. The list is populated from a JSON object constructed from data in a database.</p>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+<ul id="dog-list">
+	<li>Loading...</li>
+</ul>
+
+<script type="text/javascript">
+//<![CDATA[
+$.getJSON("/homework-assignments/6.php",
+	function (data) {
+		$('#dog-list').empty();
+		$.each(data, function(i, dog) {
+			content = '<li>' + dog.name + ' is ' + dog.color + '</li>';
+			$(content).appendTo('#dog-list');
+		});
+	});
+
+function getFields()
+{
+	var name = document.getElementById('dog-name').value;
+	var color = document.getElementById('dog-color').value;
+	
+	// If either field is null, whitespace, or empty, we do not allow submission
+	if (isBlank(name) || isBlank(color))
+	{
+		alert('No name or color entered!');
+		return false;
+	}
+	
+	return true;
+}
+
+function isBlank(str)
+{
+    return (!str || /^\s*$/.test(str));
+}
+//]]>
+</script>
+
+<hr />
+
+<p>Add new dog:</p>
+
+<form action="/homework-assignments/8.php" method="post" onsubmit="return getFields();">
+<span>Dog name:</span> <input type="text" id="dog-name" name="name" /> <span>Dog color:</span> <input type="text" id="dog-color" name="color" /> <input type="submit" />
+</form>

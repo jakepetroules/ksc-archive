@@ -1,0 +1,17 @@
+The program instantiates a BufferedReader to read input from the user.
+
+It then prints a message and prompts for input, reading the user's name and their birth date. If invalid values are entered for either field, the program continues to prompt them for valid input.
+
+The program prints a message saying "The birthday month for {name} for the year {birth year} is:" and prints a monthly calendar for the user's birth year, formatted like so:
+
+            September
+  S    M    T    W    T    F    S
+  1    2    3    4    5    6    7  
+  8    9   10   11   12   13   14  
+ 15   16   17   18*  19   20   21  
+ 22   23   24   25   26   27   28  
+ 29   30  
+ 
+ The above example shows what the calendar would look like for September 1991. The program will also put a * next to the day of that month on which the person was born.
+ 
+ The program then prints "{name}'s current age is {age}", using the current date and time to calculate the user's age in years, and exits.

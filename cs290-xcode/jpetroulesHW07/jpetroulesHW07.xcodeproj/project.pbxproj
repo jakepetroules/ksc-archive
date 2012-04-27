@@ -1,0 +1,293 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		141347201464843300BFFDB4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1413471F1464843300BFFDB4 /* Cocoa.framework */; };
+		1413472A1464843300BFFDB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 141347281464843300BFFDB4 /* InfoPlist.strings */; };
+		1413472C1464843300BFFDB4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1413472B1464843300BFFDB4 /* main.m */; };
+		141347301464843300BFFDB4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1413472E1464843300BFFDB4 /* Credits.rtf */; };
+		141347331464843300BFFDB4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 141347321464843300BFFDB4 /* AppDelegate.m */; };
+		141347361464843300BFFDB4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 141347341464843300BFFDB4 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1413471B1464843300BFFDB4 /* jpetroulesHW07.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jpetroulesHW07.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1413471F1464843300BFFDB4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		141347221464843300BFFDB4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		141347231464843300BFFDB4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		141347241464843300BFFDB4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		141347271464843300BFFDB4 /* jpetroulesHW07-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "jpetroulesHW07-Info.plist"; sourceTree = "<group>"; };
+		141347291464843300BFFDB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1413472B1464843300BFFDB4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1413472D1464843300BFFDB4 /* jpetroulesHW07-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "jpetroulesHW07-Prefix.pch"; sourceTree = "<group>"; };
+		1413472F1464843300BFFDB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		141347311464843300BFFDB4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		141347321464843300BFFDB4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		141347351464843300BFFDB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		141347181464843300BFFDB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				141347201464843300BFFDB4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		141347101464843300BFFDB4 = {
+			isa = PBXGroup;
+			children = (
+				141347251464843300BFFDB4 /* jpetroulesHW07 */,
+				1413471E1464843300BFFDB4 /* Frameworks */,
+				1413471C1464843300BFFDB4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1413471C1464843300BFFDB4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1413471B1464843300BFFDB4 /* jpetroulesHW07.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1413471E1464843300BFFDB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1413471F1464843300BFFDB4 /* Cocoa.framework */,
+				141347211464843300BFFDB4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		141347211464843300BFFDB4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				141347221464843300BFFDB4 /* AppKit.framework */,
+				141347231464843300BFFDB4 /* CoreData.framework */,
+				141347241464843300BFFDB4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		141347251464843300BFFDB4 /* jpetroulesHW07 */ = {
+			isa = PBXGroup;
+			children = (
+				141347311464843300BFFDB4 /* AppDelegate.h */,
+				141347321464843300BFFDB4 /* AppDelegate.m */,
+				141347341464843300BFFDB4 /* MainMenu.xib */,
+				141347261464843300BFFDB4 /* Supporting Files */,
+			);
+			path = jpetroulesHW07;
+			sourceTree = "<group>";
+		};
+		141347261464843300BFFDB4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				141347271464843300BFFDB4 /* jpetroulesHW07-Info.plist */,
+				141347281464843300BFFDB4 /* InfoPlist.strings */,
+				1413472B1464843300BFFDB4 /* main.m */,
+				1413472D1464843300BFFDB4 /* jpetroulesHW07-Prefix.pch */,
+				1413472E1464843300BFFDB4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1413471A1464843300BFFDB4 /* jpetroulesHW07 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 141347391464843300BFFDB4 /* Build configuration list for PBXNativeTarget "jpetroulesHW07" */;
+			buildPhases = (
+				141347171464843300BFFDB4 /* Sources */,
+				141347181464843300BFFDB4 /* Frameworks */,
+				141347191464843300BFFDB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jpetroulesHW07;
+			productName = jpetroulesHW07;
+			productReference = 1413471B1464843300BFFDB4 /* jpetroulesHW07.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		141347121464843300BFFDB4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 141347151464843300BFFDB4 /* Build configuration list for PBXProject "jpetroulesHW07" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 141347101464843300BFFDB4;
+			productRefGroup = 1413471C1464843300BFFDB4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1413471A1464843300BFFDB4 /* jpetroulesHW07 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		141347191464843300BFFDB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1413472A1464843300BFFDB4 /* InfoPlist.strings in Resources */,
+				141347301464843300BFFDB4 /* Credits.rtf in Resources */,
+				141347361464843300BFFDB4 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		141347171464843300BFFDB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1413472C1464843300BFFDB4 /* main.m in Sources */,
+				141347331464843300BFFDB4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		141347281464843300BFFDB4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141347291464843300BFFDB4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1413472E1464843300BFFDB4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1413472F1464843300BFFDB4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		141347341464843300BFFDB4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				141347351464843300BFFDB4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		141347371464843300BFFDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		141347381464843300BFFDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1413473A1464843300BFFDB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jpetroulesHW07/jpetroulesHW07-Prefix.pch";
+				INFOPLIST_FILE = "jpetroulesHW07/jpetroulesHW07-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1413473B1464843300BFFDB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "jpetroulesHW07/jpetroulesHW07-Prefix.pch";
+				INFOPLIST_FILE = "jpetroulesHW07/jpetroulesHW07-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		141347151464843300BFFDB4 /* Build configuration list for PBXProject "jpetroulesHW07" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				141347371464843300BFFDB4 /* Debug */,
+				141347381464843300BFFDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		141347391464843300BFFDB4 /* Build configuration list for PBXNativeTarget "jpetroulesHW07" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1413473A1464843300BFFDB4 /* Debug */,
+				1413473B1464843300BFFDB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 141347121464843300BFFDB4 /* Project object */;
+}

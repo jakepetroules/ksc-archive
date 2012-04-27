@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="DSAss05A_PetroulesJ">
+  <logicalClassDesignerModelMoniker Id="44c86500-b157-47a3-ad54-e2cfb17507f4" />
+  <nestedChildShapes>
+    <classShape Id="455a7f02-e56c-4403-bdfa-c52fe427bc0d" absoluteBounds="1.125, 1, 2.875, 3.1445311655600863" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="6592af7f-dab3-4afa-9c29-25c9653a610c" LastKnownName="ClinicMonitor" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="b22816d9-b103-447e-b033-0b9703c3bda8" absoluteBounds="1.14, 1.3900000000000001, 2.8449999999999998, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="43bda4ea-5cb3-40c1-816d-638030cf5083" absoluteBounds="1.14, 1.7613281125823657, 2.8449999999999998, 2.2832030529777207" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="192ad1e4-65ca-4411-bef7-24a17802d06f" absoluteBounds="4.375, 1.125, 2.875, 2.3437499403953557" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="f368f10e-005c-461d-8a14-2b14881f8319" LastKnownName="ClinicPatient" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="776c994e-a499-4d26-9750-4147fe31bfcd" absoluteBounds="4.39, 1.5150000000000001, 2.8449999999999998, 0.68164060264825832" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="ee448176-5f2f-4572-a915-7b9078915ace" absoluteBounds="4.39, 2.2066406026482586, 2.8449999999999998, 1.1621093377470972" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4f113fcd-2770-4748-840f-f0090ec7ed32" absoluteBounds="7.5, 1.125, 2.25, 1.8632812052965164" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="b820010b-4a66-4cee-826a-bdb36e768231" LastKnownName="DoctorQueue" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="75aff1e6-12ab-4ab3-ae75-f950fee8d8c6" absoluteBounds="7.515, 1.5150000000000001, 2.2199999999999998, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="2c9bc8eb-fd41-499b-9b72-c8e0dc898289" absoluteBounds="7.515, 2.046484357615312, 2.2199999999999998, 0.84179684768120444" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>
